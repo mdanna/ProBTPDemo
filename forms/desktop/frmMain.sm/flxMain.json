@@ -35,7 +35,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "steps"
+        "steps",
+        "flxStep"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -45,7 +46,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "a05a596c83054bbd95aa4c56223329fa",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "frmMain",
     "pf": "frmMain",

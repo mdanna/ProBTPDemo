@@ -1,0 +1,93 @@
+{
+    "classname": "AppHeader",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "jf3bae2fff674cadbe12e3e78add2792",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 1,
+                    "propertyKey": "showDateTime",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "showDateTime",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxDateTime",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "ff3f238b843745ae8359f46665383881"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ic0cae05bc5c42aaae00224510d26a0b",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "date",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "date",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblDate",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ebfb7e3a930446489c98cfdbd664ac2b"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "d9589fcac04f4f99800f6a9b9db0797e",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "time",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "time",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblTime",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "e98c329b2c864070abcb4124fc55e285"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.probtp",
+    "version": "1.0.0"
+}

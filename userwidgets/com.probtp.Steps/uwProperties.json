@@ -1,0 +1,88 @@
+{
+    "classname": "Steps",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": 1,
+                    "group": "General",
+                    "kuid": "ifbc03340c13457e803fed48c6d469d8",
+                    "originalPropertyKey": "currentStep",
+                    "propertyIndex": 1,
+                    "propertyKey": "currentStep",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "currentStep",
+                        "type": "integer",
+                        "uiRepresentation": "Label-Textbox",
+                        "validationData": "^(\\+|-)?\\d+$"
+                    },
+                    "srcWgtKUID": "c65ceae0ac2c42eab0428769b4628e8d",
+                    "type": "integer",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": {
+                        "data": [
+                            {
+                                "title": "Pippo"
+                            },
+                            {
+                                "title": "Pluto"
+                            },
+                            {
+                                "title": "Paperino"
+                            }
+                        ],
+                        "schema": [
+                            {
+                                "columnHeaderTemplate": null,
+                                "columnHeaderText": "title",
+                                "columnHeaderType": "text",
+                                "columnID": "title",
+                                "columnText": "Not Defined",
+                                "columnType": "text",
+                                "kuid": "af1d6d05e73a42b6b9efd85725f22ecb"
+                            }
+                        ]
+                    },
+                    "group": "General",
+                    "kuid": "c88d9f8702b44a168c75f2c4f44eb8a6",
+                    "originalPropertyKey": "stepNames",
+                    "propertyIndex": 2,
+                    "propertyKey": "stepNames",
+                    "pw": {
+                        "displayName": "stepNames",
+                        "uiRepresentation": "Label-DataGrid"
+                    },
+                    "srcWgtKUID": "c65ceae0ac2c42eab0428769b4628e8d",
+                    "type": "data grid",
+                    "value": 1
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.probtp",
+    "version": "1.0.0"
+}

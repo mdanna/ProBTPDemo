@@ -161,3 +161,8 @@ resources/customlibs/jsXml/binarydata.xml
 
 /controllers/**/*ControllerActions.js
 /userwidgets/**/modules/require/*ControllerActions.js
+modules/voltmx_sdk.js
+nativebindings/Android/4.0/Kony_FileStorage-Android-4.0.zip
+nativebindings/Android/4.0/Kony_SDKCommons-Android-4.0.zip
+nativebindings/iOS/14.3/Kony_FileStorage-iOS-14.3.zip
+nativebindings/iOS/14.3/Kony_SDKCommons-iOS-14.3.zip

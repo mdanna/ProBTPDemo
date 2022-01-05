@@ -1,0 +1,94 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "100dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sd8be829747f4b16a3129a7d1e042c83",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "stepNames": {
+            "data": [
+                {
+                    "title": "Création du rapport"
+                },
+                {
+                    "title": "Recommandation"
+                },
+                {
+                    "title": "Unité destinataire"
+                },
+                {
+                    "title": "Proposition de solution"
+                },
+                {
+                    "title": "Définition de solution"
+                },
+                {
+                    "title": "J'accepte la proposition"
+                },
+                {
+                    "title": "Réalisation de solution"
+                },
+                {
+                    "title": "J'accepte la solution réalisée"
+                }
+            ],
+            "schema": [
+                {
+                    "columnHeaderTemplate": null,
+                    "columnHeaderText": "title",
+                    "columnHeaderType": "text",
+                    "columnID": "title",
+                    "columnText": "Not Defined",
+                    "columnType": "text",
+                    "kuid": "af1d6d05e73a42b6b9efd85725f22ecb"
+                }
+            ]
+        }
+    },
+    "id": "steps",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "gf718c550ce2477bb47dbce7fce6d7a3",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxMain",
+    "pf": "frmMain",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "c65ceae0ac2c42eab0428769b4628e8d",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

@@ -1,0 +1,94 @@
+{
+    "classname": "Step",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "Past",
+                    "group": "General",
+                    "kuid": "f678f68d3a2e4a4e961afe525c63afc2",
+                    "originalPropertyKey": "state",
+                    "propertyIndex": 3,
+                    "propertyKey": "state",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "state",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "a6979786c7294f9f89856a70891d88e9",
+                    "type": "list selector",
+                    "value": [
+                        "Past",
+                        "Current",
+                        "Future"
+                    ]
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "d483e5828f4e4b6c9bf956f8be17cbfa",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "num",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "num",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblNum",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ec8bb5ccba1d452a86913f0507989203"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "dab6087073eb46f5aa32d9b30d7dd266",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "title",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "title",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblText",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "a587bfbda1a247219b62d1ed4f9eecae"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.probtp",
+    "version": "1.0.0"
+}

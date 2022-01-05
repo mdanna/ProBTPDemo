@@ -47,12 +47,10 @@ define(function() {
     onMenuSelect() {},
 
     deselect() {
-      this.view.flxItem2.skin = SKIN_FLX_UNSELECTED;
-      this.view.lblItem2.skin = SKIN_LBL_UNSELECTED;
-      this.view.imgItem2.src = IMG2_UNSELECTED;
       this.view.flxItem1.skin = SKIN_FLX_UNSELECTED;
-      this.view.lblItem1.skin = SKIN_LBL_UNSELECTED;
-      this.view.imgItem1.src = IMG1_UNSELECTED;
+      this.view.flxItem2.skin = SKIN_FLX_UNSELECTED;
+      this.view.flxItem3.skin = SKIN_FLX_UNSELECTED;
+      this.view.flxItem4.skin = SKIN_FLX_UNSELECTED;
     },
   };
 });

@@ -28,8 +28,8 @@
         "value": "0dp"
     },
     "_width_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "allboxes": [],
     "allowhorizontalbounce": false,
@@ -49,6 +49,10 @@
     "isvisible": true,
     "kuid": "c65ceae0ac2c42eab0428769b4628e8d",
     "layouttype": 3,
+    "maxwidth": {
+        "type": "string",
+        "value": "100%"
+    },
     "name": "kony.ui.FlexScrollContainer",
     "pagingenabled": false,
     "parent": "userwidgetmodel",

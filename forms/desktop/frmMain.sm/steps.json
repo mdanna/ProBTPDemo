@@ -30,10 +30,14 @@
         "value": "30dp"
     },
     "_width_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 0,
     "data": {
         "stepNames": {
@@ -82,6 +86,10 @@
     "isvisible": true,
     "kuid": "gf718c550ce2477bb47dbce7fce6d7a3",
     "masterType": 1,
+    "maxwidth": {
+        "type": "string",
+        "value": "100%"
+    },
     "name": "kony.ui.UserWidgetInstance",
     "parent": "flxMain",
     "pf": "frmMain",

@@ -19,25 +19,6 @@
             "custom": [
                 {
                     "access": "Write",
-                    "defaultValue": 1,
-                    "group": "General",
-                    "kuid": "ifbc03340c13457e803fed48c6d469d8",
-                    "originalPropertyKey": "currentStep",
-                    "propertyIndex": 1,
-                    "propertyKey": "currentStep",
-                    "pw": {
-                        "dependencyConditions": {},
-                        "displayName": "currentStep",
-                        "type": "integer",
-                        "uiRepresentation": "Label-Textbox",
-                        "validationData": "^(\\+|-)?\\d+$"
-                    },
-                    "srcWgtKUID": "c65ceae0ac2c42eab0428769b4628e8d",
-                    "type": "integer",
-                    "value": ""
-                },
-                {
-                    "access": "Write",
                     "defaultValue": {
                         "data": [
                             {
@@ -68,12 +49,32 @@
                     "propertyIndex": 2,
                     "propertyKey": "stepNames",
                     "pw": {
+                        "dependencyConditions": {},
                         "displayName": "stepNames",
                         "uiRepresentation": "Label-DataGrid"
                     },
                     "srcWgtKUID": "c65ceae0ac2c42eab0428769b4628e8d",
                     "type": "data grid",
                     "value": 1
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": 1,
+                    "group": "General",
+                    "kuid": "d3a4b805dfeb40fe91d0e06fe9117c05",
+                    "originalPropertyKey": "currentStep",
+                    "propertyIndex": 3,
+                    "propertyKey": "currentStep",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "currentStep",
+                        "type": "integer",
+                        "uiRepresentation": "Label-Textbox",
+                        "validationData": "^(\\+|-)?\\d+$"
+                    },
+                    "srcWgtKUID": "c65ceae0ac2c42eab0428769b4628e8d",
+                    "type": "integer",
+                    "value": ""
                 }
             ],
             "passthrough": []

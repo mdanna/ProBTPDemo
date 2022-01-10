@@ -13,11 +13,10 @@ define({
         };
         
         eventManager.subscribe('eventNext', () => {
-          const currentStep = parseInt(this.view.steps.currentStep) + 1;
           this.view.flxStep.widgets().forEach((stepContainer, index) => {
-            stepContainer.isVisible = index + 1 === currentStep;
+            stepContainer.isVisible = index + 1 === globals.currentStep;
           });
-          this.view.steps.currentStep = currentStep;
+          this.view.steps.currentStep = globals.currentStep;
         });
         eventManager.subscribe('eventFinish', () => {
           this.view.flxStep.widgets().forEach((stepContainer, index) => {

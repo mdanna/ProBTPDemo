@@ -12,9 +12,9 @@ define(function() {
           }, {}, {});
           stepCmp.num = (index + 1) + '';
           stepCmp.title = row.title;
-          if((index + 1) < this.currentStep){
+          if((index + 1) < globals.currentStep){
             stepCmp.state = 'Past';
-          } else if((index + 1) === this.currentStep){
+          } else if((index + 1) === globals.currentStep){
             stepCmp.state = 'Current';
           } else {
             stepCmp.state = 'Future';
@@ -32,30 +32,30 @@ define(function() {
 
     //Logic for getters/setters of custom properties
     initGettersSetters: function() {
-      defineGetter(this, 'currentStep', () => {
-        return this._currentStep;
-      });
-      defineSetter(this, 'currentStep', value => {
-        this._currentStep = value;
-        if(this.hasRendered){
-          this.stepNames.data.forEach((row, index) => {
-            const stepCmp = this.view[`cmpStep${index}`];
-            if((index + 1) < value){
-              stepCmp.state = 'Past';
-            } else if((index + 1) === value){
-              stepCmp.state = 'Current';
-            } else {
-              stepCmp.state = 'Future';
-            }
-          });        
+            defineGetter(this, 'stepNames', () => {
+                return this._stepNames;
+            });
+            defineSetter(this, 'stepNames', value => {
+                this._stepNames = value;
+            });
+            defineGetter(this, 'currentStep', () => {
+                return this._currentStep;
+            });
+            defineSetter(this, 'currentStep', value => {
+                this._currentStep = value;
+                if (this.hasRendered) {
+                    this.stepNames.data.forEach((row, index) => {
+                        const stepCmp = this.view[`cmpStep${ index }`];
+                        if (index + 1 < value) {
+                            stepCmp.state = 'Past';
+                        } else if (index + 1 === value) {
+                            stepCmp.state = 'Current';
+                        } else {
+                            stepCmp.state = 'Future';
+                        }
+                    });
+                }
+            });
         }
-      });
-      defineGetter(this, 'stepNames', () => {
-        return this._stepNames;
-      });
-      defineSetter(this, 'stepNames', value => {
-        this._stepNames = value;
-      });
-    }
   };
 });

@@ -5,6 +5,7 @@ define(function() {
 
       this.view.postShow = () => {
         this.hasRendered = true;
+        this.view.removeAll();
         this.stepNames.data.forEach((row, index) => {
           const stepCmp = new com.probtp.Step({
             id: `cmpStep${index}`

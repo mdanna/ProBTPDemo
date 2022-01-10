@@ -7,6 +7,10 @@ define(function() {
           kony.timer.schedule('updateDateTime', () => {
             this.setDateTime();
           }, 60, true);
+          
+          this.view.flxPerson.onClick = () => {
+            eventManager.publish('eventShowRoleSelector', this.view.lblRole.text);
+          };
           this.initDone = true;
         }
       };

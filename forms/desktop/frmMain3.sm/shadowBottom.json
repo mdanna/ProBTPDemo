@@ -1,0 +1,79 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s54e2d9b3d614c869718a891d570605d",
+    "_top_": {
+        "type": "string",
+        "value": "96dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "areflexpropsreferenced": false,
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "clipbounds": true,
+    "containerweight": 0,
+    "dataDiffs": {
+        "ShadowBottom": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "hddb8447a34c4201a508e9b53dcdead7",
+                "srcKUID": "c2918e3ed64742e7b62b4e0dbcfd2002",
+                "wType": "FlexContainer"
+            },
+            "responsiveData": {},
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "96dp"
+                }
+            }
+        }
+    },
+    "enablescrolling": true,
+    "id": "shadowBottom",
+    "info": null,
+    "iscustomlayout": false,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "hddb8447a34c4201a508e9b53dcdead7",
+    "layouttype": 2,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "frmMain3",
+    "pf": "frmMain3",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "c2918e3ed64742e7b62b4e0dbcfd2002",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

@@ -1,8 +1,14 @@
 {
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
     "DNDConfig": null,
+    "_children_": [],
     "_height_": {
         "type": "string",
         "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -10,7 +16,7 @@
         0,
         0
     ],
-    "_orientation_": 6,
+    "_orientation_": 1,
     "_padding_": [
         0,
         0,
@@ -18,10 +24,6 @@
         0
     ],
     "_percent_": true,
-    "_right_": {
-        "type": "string",
-        "value": "0dp"
-    },
     "_skin_": "s216801916534979a34790f5dfd3d04a",
     "_top_": {
         "type": "string",
@@ -29,34 +31,24 @@
     },
     "_width_": {
         "type": "string",
-        "value": "300dp"
+        "value": "100%"
     },
-    "allboxes": [],
-    "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [
-        "flxPicture",
-        "flxName"
-    ],
-    "clipbounds": true,
-    "containerweight": 100,
-    "enablescrolling": true,
-    "id": "flxPerson",
+    "containerweight": 0,
+    "data": {},
+    "id": "stepContainer1",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "b215461c3ed4439a9db799d2f718f454",
-    "layouttype": 3,
-    "name": "kony.ui.FlexContainer",
-    "parent": "flxGroup",
-    "pf": "userwidgetmodel",
+    "kuid": "dbb0322aa145419b865fc11a3cbff1de",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxStep",
+    "pf": "frmMain3",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "reverselayoutdirection": true,
-    "snapgridsize": 10,
-    "snaptogrid": true,
-    "wType": "FlexContainer",
-    "widgetalignment": 1,
+    "sourceUserWidget": "faa172b8865043e78efcf2db95b9addc",
+    "wType": "UserWidgetInstance",
     "zindex": 1
 }

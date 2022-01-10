@@ -23,7 +23,7 @@
         "value": "0dp"
     },
     "_skin_": "s2a918266a50451fb8b5dc8d40a5696d",
-    "_src_": "option3.png",
+    "_src_": "photo.png",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -42,14 +42,14 @@
         "value": "50%"
     },
     "containerweight": 100,
-    "id": "imgPicture",
+    "id": "imgPicture1",
     "imagescalemode": 2,
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "d4673e6d83eb4f5f88d0d967f3d5fee0",
+    "kuid": "deaf9e9c7a8d4fa0986bc2a1de3b07f4",
     "name": "kony.ui.Image2",
-    "parent": "flxPicture",
+    "parent": "flxPicture1",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

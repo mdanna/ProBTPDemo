@@ -80,6 +80,78 @@
                         "wType": "Label"
                     },
                     "srcWgtKUID": "e98c329b2c864070abcb4124fc55e285"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "d0857dcff3ea492293490d11ec2fa096",
+                    "originalPropertyKey": "src",
+                    "propertyIndex": 4,
+                    "propertyKey": "picture",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "picture",
+                        "isHiddenInTool": false,
+                        "srcWidget": "imgPicture",
+                        "type": "string",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Imagelist",
+                                "dataUpdaterId": "Imagelist",
+                                "popupId": "Imagelist",
+                                "type": "ImageEditBtn"
+                            },
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-Label-Button",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "d4673e6d83eb4f5f88d0d967f3d5fee0"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "f4894e8c2bcb4b74a3eb808ae6c72579",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 5,
+                    "propertyKey": "person",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "person",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblName",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "bf2cef72e4ff44409e8d9fa0cd414243"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ac52da97faa0457f8fc0923afab13fa9",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 6,
+                    "propertyKey": "role",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "role",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblRole",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "b892f948c13340b69c6c3163dfd97180"
                 }
             ]
         },

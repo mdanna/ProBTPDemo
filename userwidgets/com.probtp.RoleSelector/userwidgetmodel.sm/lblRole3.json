@@ -5,6 +5,10 @@
         "type": "string",
         "value": "50%"
     },
+    "_left_": {
+        "type": "string",
+        "value": "10dp"
+    },
     "_margin_": [
         1,
         1,
@@ -21,8 +25,8 @@
         "type": "string",
         "value": "10dp"
     },
-    "_skin_": "s991619a3756442bb8d46c2b8232a5d1",
-    "_text_": "",
+    "_skin_": "sa9192970bbf48d3a40ed59e4d9b253d",
+    "_text_": "Pilotes/Coordinateurs",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -40,8 +44,8 @@
     },
     "canUpdateUI": true,
     "containerweight": 100,
-    "contentalignment": 5,
-    "id": "lblName",
+    "contentalignment": 4,
+    "id": "lblRole3",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,9 +59,9 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "bf2cef72e4ff44409e8d9fa0cd414243",
+    "kuid": "d89cae942f254f4cb294b2f53f56debb",
     "name": "kony.ui.Label",
-    "parent": "flxName",
+    "parent": "flxName3",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

@@ -1,0 +1,51 @@
+{
+    "classname": "RoleSelector",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "1",
+                    "group": "General",
+                    "kuid": "daecfed296de4ba885cd31930746c54a",
+                    "originalPropertyKey": "selection",
+                    "propertyIndex": 1,
+                    "propertyKey": "selection",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "selection",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "d0a14f4d3b124b298db2ac892a53120f",
+                    "type": "list selector",
+                    "value": [
+                        "1",
+                        "2",
+                        "3"
+                    ]
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.probtp",
+    "version": "1.0.0"
+}

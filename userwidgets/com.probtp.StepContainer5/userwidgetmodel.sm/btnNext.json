@@ -50,7 +50,7 @@
     "isvisible": true,
     "kuid": "b903491cc2e64811ae3f4abfd846d0f6",
     "name": "kony.ui.Button",
-    "parent": "StepContainer5",
+    "parent": "flxContent",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

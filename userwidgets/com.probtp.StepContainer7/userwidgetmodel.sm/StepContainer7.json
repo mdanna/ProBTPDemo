@@ -35,8 +35,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "btnNext",
-        "lblStep"
+        "cmpWaitingPage",
+        "flxContent"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -45,7 +45,7 @@
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "c0e5a4213d9f4614878ace67b9d479db",
+    "kuid": "d5947a955fdf4660b2ad9d9a58a82907",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "userwidgetmodel",

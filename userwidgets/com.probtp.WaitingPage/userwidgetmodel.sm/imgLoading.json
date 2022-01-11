@@ -1,19 +1,20 @@
 {
-    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
     "DNDConfig": null,
+    "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "50dp"
+        "value": "60dp"
     },
     "_left_": {
         "type": "string",
-        "value": "417dp"
+        "value": "0dp"
     },
     "_margin_": [
-        6,
-        6,
-        6,
-        6
+        0,
+        0,
+        0,
+        0
     ],
     "_padding_": [
         0,
@@ -21,39 +22,35 @@
         0,
         0
     ],
-    "_skin_": "sf4875576e6345698c0a931515d0caa1",
-    "_text_": "Next",
+    "_skin_": "s2a918266a50451fb8b5dc8d40a5696d",
+    "_src_": "loading.png",
     "_top_": {
         "type": "string",
-        "value": "254dp"
+        "value": "81dp"
     },
     "_width_": {
         "type": "string",
-        "value": "300dp"
+        "value": "60dp"
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "centery": {
         "type": "string",
         "value": "50%"
     },
     "containerweight": 100,
-    "contentalignment": 5,
-    "displaytext": true,
-    "focusskin": "sdab35bb2db24d5b88381d59a0654528",
-    "id": "btnNext",
+    "id": "imgLoading",
+    "imagescalemode": 1,
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "cf4b94155fb44b26bb80b4850400e5f7",
-    "name": "kony.ui.Button",
-    "parent": "StepContainer8",
+    "kuid": "cf79ecc6b31c40969be6fb6b4c25d32f",
+    "name": "kony.ui.Image2",
+    "parent": "flxLoading",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
-    "wType": "Button",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
     "zindex": 1
 }

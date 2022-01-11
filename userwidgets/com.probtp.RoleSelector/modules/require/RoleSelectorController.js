@@ -14,22 +14,22 @@ define(function() {
                   this.view.flxPerson1.skin = SKIN_SELECTED;
                   this.view.flxPerson2.skin = SKIN_UNSELECTED;
                   this.view.flxPerson3.skin = SKIN_UNSELECTED;
-                  new kony.mvc.Navigation('frmMain1').navigate();
                   this.view.isVisible = false;
+                  new kony.mvc.Navigation('frmMain1').navigate();
                 };
                 this.view.flxPerson2.onClick = () => {
                   this.view.flxPerson1.skin = SKIN_UNSELECTED;
                   this.view.flxPerson2.skin = SKIN_SELECTED;
                   this.view.flxPerson3.skin = SKIN_UNSELECTED;
-                  new kony.mvc.Navigation('frmMain2').navigate();
                   this.view.isVisible = false;
+                  new kony.mvc.Navigation('frmMain2').navigate();
                 };
                 this.view.flxPerson3.onClick = () => {
                   this.view.flxPerson1.skin = SKIN_UNSELECTED;
                   this.view.flxPerson2.skin = SKIN_UNSELECTED;
                   this.view.flxPerson3.skin = SKIN_SELECTED;
-                  new kony.mvc.Navigation('frmMain3').navigate();
                   this.view.isVisible = false;
+                  new kony.mvc.Navigation('frmMain3').navigate();
                 };
                 this.view.flxBackground.onClick = () => this.view.isVisible = false;
                 this.initDone = true;

@@ -35,8 +35,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "btnNext",
-        "lblStep"
+        "cmpWaitingPage",
+        "flxContent"
     ],
     "clipbounds": true,
     "containerweight": 100,

@@ -40,7 +40,7 @@
     "info": null,
     "iscustomlayout": false,
     "isvisible": false,
-    "kuid": "e7a72f32795c4b02be4e33ecbeb65bef",
+    "kuid": "abe4230326bc46a78be54284f9cea05a",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
     "parent": "flxStep",
@@ -48,7 +48,7 @@
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "sourceUserWidget": "c0e5a4213d9f4614878ace67b9d479db",
+    "sourceUserWidget": "d5947a955fdf4660b2ad9d9a58a82907",
     "wType": "UserWidgetInstance",
     "zindex": 1
 }

@@ -1,0 +1,90 @@
+{
+    "classname": "WaitingPage",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "loading.png",
+                    "group": "General",
+                    "kuid": "i2a6a315116c48a384c8395a6ca23dd1",
+                    "originalPropertyKey": "image",
+                    "propertyIndex": 4,
+                    "propertyKey": "image",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h7043ba536e54c45972747c92a12cde8",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "bac97160f0694f92845fe9a653a482a4",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "title",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "title",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblTitle",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "bcd583162d214d54b26ee0b63414d09d"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "h2b83170cf5e44e4a08022b76638602f",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 3,
+                    "propertyKey": "showSubtitle",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "showSubtitle",
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxWaiting",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "ib5ba603173d4c2eb99cb0ea3978412a"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.probtp",
+    "version": "1.0.0"
+}

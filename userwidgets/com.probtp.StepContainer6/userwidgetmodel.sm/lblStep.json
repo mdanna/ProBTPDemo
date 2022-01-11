@@ -65,7 +65,7 @@
     "isvisible": true,
     "kuid": "h3595477621c41de85b44e43e6a0ef26",
     "name": "kony.ui.Label",
-    "parent": "StepContainer6",
+    "parent": "flxContent",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

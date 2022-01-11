@@ -1,7 +1,5 @@
 {
-    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
     "DNDConfig": null,
-    "_children_": [],
     "_height_": {
         "type": "string",
         "value": "100%"
@@ -16,7 +14,7 @@
         0,
         0
     ],
-    "_orientation_": 1,
+    "_orientation_": 6,
     "_padding_": [
         0,
         0,
@@ -33,22 +31,30 @@
         "type": "string",
         "value": "100%"
     },
+    "allboxes": [],
+    "autogrowmode": 0,
     "canUpdateUI": true,
-    "containerweight": 0,
-    "data": {},
-    "id": "stepContainer8",
+    "children": [
+        "btnNext",
+        "lblStep"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxContent",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
-    "kuid": "abe4230326bc46a78be54284f9cea05a",
-    "masterType": 1,
-    "name": "kony.ui.UserWidgetInstance",
-    "parent": "flxStep",
-    "pf": "frmMain2",
+    "isvisible": true,
+    "kuid": "bbc28589b8a249ebba0a5e1b7c625a50",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "StepContainer2",
+    "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "sourceUserWidget": "d5947a955fdf4660b2ad9d9a58a82907",
-    "wType": "UserWidgetInstance",
-    "zindex": 1
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
 }

@@ -36,12 +36,12 @@
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {
-        "title": "En attente de la définition de la recommendation"
+        "title": "En attente de la définition de la recommendation..."
     },
     "id": "cmpWaitingPage",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "e67e5cebbdcf4609a584e29c57ea93dc",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",

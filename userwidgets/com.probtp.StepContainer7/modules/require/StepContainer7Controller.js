@@ -5,8 +5,7 @@ define(function() {
   return {
     constructor: function(baseConfig, layoutConfig, pspConfig) {
       eventManager.subscribe('eventNext', () => {
-        this.view.flxContent.isVisible = globals.isCurrentFormForCurrentRole();
-        this.view.cmpWaitingPage.isVisible = !globals.isCurrentFormForCurrentRole();
+        this.updateLayout();
       });
       
       this.view.preShow = () => {
@@ -14,13 +13,15 @@ define(function() {
       };
       
       this.view.postShow = () => {
-        this.view.flxContent.isVisible = globals.isCurrentFormForCurrentRole();
-        this.view.cmpWaitingPage.isVisible = !globals.isCurrentFormForCurrentRole();
+        this.updateLayout();
       };
     },
-    //Logic for getters/setters of custom properties
-    initGettersSetters: function() {
 
-    }
+    updateLayout() {
+      this.view.flxContent.isVisible = globals.isCurrentFormForCurrentRole();
+      this.view.cmpWaitingPage.isVisible = !globals.isCurrentFormForCurrentRole();
+    },
+
+    initGettersSetters() {}
   };
 });

@@ -3,11 +3,11 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "30dp"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "632dp"
+        "value": "10dp"
     },
     "_margin_": [
         1,
@@ -21,15 +21,15 @@
         0,
         0
     ],
-    "_skin_": "sec79d48124541baab9fc7a7872b1564",
-    "_text_": "Step 1",
+    "_skin_": "s39de92d332a4829afdd924b585a2308",
+    "_text_": "Enregistrer",
     "_top_": {
         "type": "string",
-        "value": "268dp"
+        "value": "0dp"
     },
     "_width_": {
-        "type": "string",
-        "value": "150dp"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
@@ -39,17 +39,9 @@
         }
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
-    "centery": {
-        "type": "string",
-        "value": "30%"
-    },
     "containerweight": 100,
-    "contentalignment": 5,
-    "id": "lblStep",
+    "contentalignment": 4,
+    "id": "lblCaption",
     "info": null,
     "ipad": {
         "psp": {
@@ -63,9 +55,9 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "b1ef6db09a1a4e30ae242e83a9f39620",
+    "kuid": "b173ba30e8da48f39fcf363d69703979",
     "name": "kony.ui.Label",
-    "parent": "flxContent",
+    "parent": "StandardButton",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

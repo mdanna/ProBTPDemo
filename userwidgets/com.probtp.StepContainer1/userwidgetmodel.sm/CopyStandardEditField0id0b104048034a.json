@@ -1,5 +1,7 @@
 {
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
     "DNDConfig": null,
+    "_children_": [],
     "_height_": {
         "type": "string",
         "value": "60dp"
@@ -14,7 +16,7 @@
         0,
         0
     ],
-    "_orientation_": 6,
+    "_orientation_": 1,
     "_padding_": [
         0,
         0,
@@ -22,39 +24,31 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s2dcac442ca9415db2b65251e7f15b5e",
+    "_skin_": "s216801916534979a34790f5dfd3d04a",
     "_top_": {
         "type": "string",
         "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "300dp"
     },
-    "allboxes": [],
-    "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [
-        "flxItemElement2"
-    ],
-    "clipbounds": true,
-    "containerweight": 100,
-    "enablescrolling": true,
-    "id": "flxItem2",
+    "containerweight": 0,
+    "data": {},
+    "id": "CopyStandardEditField0id0b104048034a",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "e45b85a9a979415ba5ee4add87b13ff0",
-    "layouttype": 2,
-    "name": "kony.ui.FlexContainer",
-    "parent": "LeftMenu",
+    "kuid": "ac067b73d1894d28b182f815ca9cdd08",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "FlexContainer0d8e1515b51a14b",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "snapgridsize": 10,
-    "snaptogrid": true,
-    "wType": "FlexContainer",
-    "widgetalignment": 1,
+    "sourceUserWidget": "d353d332f6554c0bb17590419363c70d",
+    "wType": "UserWidgetInstance",
     "zindex": 1
 }

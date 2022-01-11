@@ -35,11 +35,13 @@
     },
     "canUpdateUI": true,
     "containerweight": 0,
-    "data": {},
+    "data": {
+        "title": "En attente du réalisateur pour definir la solution..."
+    },
     "id": "cmpWaitingPage",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "e6886010bf584eaf880101fb234c3f22",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",

@@ -36,12 +36,12 @@
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {
-        "title": "En attente de l'acceptation de la solution réalisée"
+        "title": "En attente de l'acceptation de la solution réalisée..."
     },
     "id": "cmpWaitingPage",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "ff8948d03b1a441597fc43a57143ddd5",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",

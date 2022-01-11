@@ -6,7 +6,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "20dp"
     },
     "_margin_": [
         0,
@@ -22,10 +22,10 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s2dcac442ca9415db2b65251e7f15b5e",
+    "_skin_": "s216801916534979a34790f5dfd3d04a",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "16dp"
     },
     "_width_": {
         "type": "string",
@@ -35,19 +35,20 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxItemElement2"
+        "CopyStandardEditField0gfa0a87accfa4a",
+        "CopyStandardEditField0h7bdb9f998ad4c"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxItem2",
+    "id": "CopyFlexContainer0e3df05021f7f40",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "e45b85a9a979415ba5ee4add87b13ff0",
-    "layouttype": 2,
+    "kuid": "c89cbc00d48c4b7f86de980b6a8b9418",
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
-    "parent": "LeftMenu",
+    "parent": "flxContent",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

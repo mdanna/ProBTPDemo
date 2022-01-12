@@ -9,13 +9,12 @@
     "font_size": 46,
     "isForked": false
   },
-  "background_color": "ffffffff",
+  "background_color": "00000000",
   "bg_type": "one",
-  "border_color": "e8d8c0ff",
-  "border_radius": 6,
-  "border_style": "custom",
+  "border_color": "424242ff",
+  "border_style": "plain",
   "border_type": 0,
-  "border_width": 1,
+  "border_width": 0,
   "desktopweb": {
     "font_name": "WorkSans-Regular",
     "font_size": 81,
@@ -39,11 +38,11 @@
   },
   "isDefaultSkin": false,
   "kiosk": {
-    "font_name": "None",
+    "font_name": "WorkSans-Regular",
     "font_size": 81,
     "isForked": false
   },
-  "kuid": "s624b460632d4b7eba16ac74e6c39f77",
+  "kuid": "s7808867613e4009869db34e91d63f5f",
   "spaan": {
     "font_name": "Helvetica",
     "font_size": 87,
@@ -79,7 +78,7 @@
     "font_size": 77,
     "isForked": false
   },
-  "wType": "TextField",
+  "wType": "Label",
   "watchos": {
     "font_name": "System",
     "font_size": 46,

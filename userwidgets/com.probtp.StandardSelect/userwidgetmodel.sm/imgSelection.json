@@ -1,10 +1,10 @@
 {
-    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
     "DNDConfig": null,
-    "_children_": [],
+    "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "60dp"
+        "value": "30dp"
     },
     "_left_": {
         "type": "string",
@@ -16,39 +16,41 @@
         0,
         0
     ],
-    "_orientation_": 1,
     "_padding_": [
         0,
         0,
         0,
         0
     ],
-    "_percent_": true,
-    "_skin_": "s216801916534979a34790f5dfd3d04a",
+    "_skin_": "s2a918266a50451fb8b5dc8d40a5696d",
+    "_src_": "down.png",
     "_top_": {
         "type": "string",
         "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "300dp"
+        "value": "30dp"
     },
     "canUpdateUI": true,
-    "containerweight": 0,
-    "data": {},
-    "id": "CopyStandardEditField0db5b0029953d43",
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "id": "imgSelection",
+    "imagescalemode": 1,
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "g256316cb6b4424a8df9500e67838ccb",
-    "masterType": 1,
-    "name": "kony.ui.UserWidgetInstance",
-    "parent": "CopyFlexContainer0j564c1c44c644e",
+    "kuid": "g9aeb3194dfe464a94a1e7866d356de4",
+    "name": "kony.ui.Image2",
+    "parent": "flxSelection",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
-    "retainflowhorizontalalignment": false,
-    "sourceUserWidget": "d353d332f6554c0bb17590419363c70d",
-    "wType": "UserWidgetInstance",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
     "zindex": 1
 }

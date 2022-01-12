@@ -1,8 +1,8 @@
 {
     "DNDConfig": null,
     "_height_": {
-        "type": "string",
-        "value": "60dp"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
@@ -32,20 +32,20 @@
         "value": "100%"
     },
     "allboxes": [],
-    "autogrowmode": 0,
+    "autogrowmode": 1,
     "canUpdateUI": true,
     "children": [
-        "CopyStandardEditField0id0b104048034a",
-        "CopyStandardEditField0b683331c5d3845"
+        "dateMission",
+        "dateDiffusion"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "FlexContainer0d8e1515b51a14b",
+    "id": "flxRow3",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "a63ec220771145b09912824d0f201229",
+    "kuid": "c89cbc00d48c4b7f86de980b6a8b9418",
     "layouttype": 3,
     "name": "kony.ui.FlexContainer",
     "parent": "flxContent",

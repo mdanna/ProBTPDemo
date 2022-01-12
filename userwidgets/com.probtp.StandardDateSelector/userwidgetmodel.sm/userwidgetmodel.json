@@ -33,7 +33,7 @@
     "canUpdateUI": true,
     "canvasWidth": 1200,
     "children": [
-        "StandardEditField"
+        "StandardDateSelector"
     ],
     "containerweight": 100,
     "currentLocale": "default",
@@ -49,7 +49,7 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "uac3fd7cf8cf4b43b3e77aa3ada1e91e",
+    "kuid": "u08a158039444b599b17484c5783cadc",
     "layouttype": 2,
     "masterType": 1,
     "name": "kony.ui.Form2",

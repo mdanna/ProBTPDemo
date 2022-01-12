@@ -1,10 +1,8 @@
 {
-    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
     "DNDConfig": null,
-    "_children_": [],
     "_height_": {
-        "type": "string",
-        "value": "60dp"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
@@ -16,7 +14,7 @@
         0,
         0
     ],
-    "_orientation_": 1,
+    "_orientation_": 6,
     "_padding_": [
         0,
         0,
@@ -33,22 +31,31 @@
         "type": "string",
         "value": "300dp"
     },
+    "allboxes": [],
+    "autogrowmode": 1,
     "canUpdateUI": true,
-    "containerweight": 0,
-    "data": {},
-    "id": "CopyStandardEditField0id0b104048034a",
+    "children": [
+        "lblCaption",
+        "flxSelection"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "StandardDateSelector",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "ac067b73d1894d28b182f815ca9cdd08",
-    "masterType": 1,
-    "name": "kony.ui.UserWidgetInstance",
-    "parent": "FlexContainer0d8e1515b51a14b",
+    "kuid": "c9b889ff23f642e68ddcad580bd498b1",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "userwidgetmodel",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "sourceUserWidget": "d353d332f6554c0bb17590419363c70d",
-    "wType": "UserWidgetInstance",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
     "zindex": 1
 }

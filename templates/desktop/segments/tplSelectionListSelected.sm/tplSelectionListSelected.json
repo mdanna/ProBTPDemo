@@ -1,5 +1,5 @@
 {
-    "@class": "com.kony.gen.viz.model.container.KVizForm",
+    "@class": "com.kony.gen.viz.model.container.KVizScrollFlexForm",
     "DNDConfig": null,
     "_margin_": [
         0,
@@ -33,14 +33,15 @@
     "canUpdateUI": true,
     "canvasWidth": 1200,
     "children": [
-        "StandardEditField"
+        "flxSelectionListSelected"
     ],
+    "containerId": true,
     "containerweight": 100,
     "currentLocale": "default",
     "device": "desktopweb",
     "displayorientation": 3,
     "enabledforidletimeout": false,
-    "id": "userwidgetmodel",
+    "id": "tplSelectionListSelected",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
@@ -49,9 +50,7 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "uac3fd7cf8cf4b43b3e77aa3ada1e91e",
-    "layouttype": 2,
-    "masterType": 1,
+    "kuid": "i8a5129bb3af442698de3d34ba204958",
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "outtransitionconfig": {

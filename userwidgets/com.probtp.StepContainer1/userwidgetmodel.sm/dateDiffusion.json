@@ -3,8 +3,8 @@
     "DNDConfig": null,
     "_children_": [],
     "_height_": {
-        "type": "string",
-        "value": "60dp"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
@@ -35,20 +35,22 @@
     },
     "canUpdateUI": true,
     "containerweight": 0,
-    "data": {},
-    "id": "CopyStandardEditField0h7bdb9f998ad4c",
+    "data": {
+        "caption": "Date de diffusion"
+    },
+    "id": "dateDiffusion",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "fbef98fea8814ebcb46d6fe1485ee99a",
+    "kuid": "g609fca6b27b4ad1afcf21e1e362290a",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "CopyFlexContainer0e3df05021f7f40",
+    "parent": "flxRow3",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "sourceUserWidget": "d353d332f6554c0bb17590419363c70d",
+    "sourceUserWidget": "c9b889ff23f642e68ddcad580bd498b1",
     "wType": "UserWidgetInstance",
     "zindex": 1
 }

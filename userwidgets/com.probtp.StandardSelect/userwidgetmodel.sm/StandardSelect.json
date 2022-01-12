@@ -1,8 +1,8 @@
 {
     "DNDConfig": null,
     "_height_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
@@ -22,54 +22,41 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sd8be829747f4b16a3129a7d1e042c83",
+    "_skin_": "s216801916534979a34790f5dfd3d04a",
     "_top_": {
         "type": "string",
         "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "300dp"
     },
     "allboxes": [],
-    "allowhorizontalbounce": false,
-    "allowverticalbounce": true,
-    "bounces": true,
+    "autogrowmode": 1,
     "canUpdateUI": true,
     "children": [
-        "lblTitle",
-        "fieldMissionId",
-        "fieldMissionTitle",
-        "flxRow1",
-        "flxRow2",
-        "flxRow3",
-        "fieldMissionComment",
-        "btnCreate"
+        "lblCaption",
+        "flxSelection",
+        "flxSelectList"
     ],
     "clipbounds": true,
     "containerweight": 100,
-    "decelerat": false,
-    "dragg": false,
     "enablescrolling": true,
-    "horizontalscrollindicator": true,
-    "id": "flxContent",
+    "id": "StandardSelect",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "dfcae961531e4376810e3ae110f01431",
+    "kuid": "b9c684bbf9094b1396469d759d8a24b2",
     "layouttype": 4,
-    "name": "kony.ui.FlexScrollContainer",
-    "pagingenabled": false,
-    "parent": "StepContainer1",
+    "name": "kony.ui.FlexContainer",
+    "parent": "userwidgetmodel",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "scrolldirection": 2,
     "snapgridsize": 10,
     "snaptogrid": true,
-    "track": false,
-    "verticalscrollindicator": true,
-    "wType": "FlexScrollContainer",
-    "widgetalignment": 1
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
 }

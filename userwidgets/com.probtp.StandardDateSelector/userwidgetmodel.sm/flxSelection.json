@@ -2,11 +2,11 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "60dp"
+        "value": "30dp"
     },
     "_left_": {
         "type": "string",
-        "value": "20dp"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -22,33 +22,33 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s216801916534979a34790f5dfd3d04a",
+    "_skin_": "sd357cca16e343ce87992e54d24fbcc5",
     "_top_": {
         "type": "string",
-        "value": "16dp"
+        "value": "6dp"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "300dp"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "CopyStandardEditField0db5b0029953d43",
-        "CopyStandardEditField0a84e6ecd116d4d"
+        "calSelection",
+        "imgSelection"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "CopyFlexContainer0j564c1c44c644e",
+    "id": "flxSelection",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "fcc1e359d9c44ff9bf8ab72f4f9b97dd",
-    "layouttype": 3,
+    "kuid": "d4484b9bc24445aabd1551aac128f956",
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxContent",
+    "parent": "StandardDateSelector",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
@@ -56,6 +56,5 @@
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 1
+    "widgetalignment": 1
 }

@@ -1,0 +1,72 @@
+{
+    "classname": "StandardTextArea",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "b9069b9b2f794d72a286ece4ccbbc147",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "caption",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "caption",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblCaption",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "c2245a1f994e4aef8c5e2f90d2a04862"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "b4b7cd48a4fb4490849d73c435bc0c32",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "text",
+                        "isHiddenInTool": false,
+                        "srcWidget": "txtArea",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textarea",
+                        "wType": "TextArea"
+                    },
+                    "srcWgtKUID": "j7db64c4765c43839e571485e1af87d2"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.probtp",
+    "version": "1.0.0"
+}

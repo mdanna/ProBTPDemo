@@ -7,11 +7,14 @@ define(function() {
       eventManager.subscribe('eventNext', () => {
         this.updateLayout();
       });
-      
+
       this.view.preShow = () => {
-        this.view.btnNext.onClick = () => globals.nextStep(globals.ROLES[2]);
+        if(!this.initDone){
+          this.view.btnNext.onClick = () => globals.nextStep(globals.ROLES[2]);
+          this.initDone = true;
+        }
       };
-      
+
       this.view.postShow = () => {
         this.updateLayout();
       };

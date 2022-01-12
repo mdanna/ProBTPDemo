@@ -14,7 +14,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "5dp"
+        "value": "2%"
     },
     "_margin_": [
         0,
@@ -35,7 +35,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "287dp"
+        "value": "98%"
     },
     "advview": "default",
     "calendaricon": "dashboardsel.png",
@@ -81,5 +81,6 @@
     "viewtype": "default",
     "wType": "Calendar",
     "widgetalignment": 5,
+    "year": null,
     "zindex": 1
 }

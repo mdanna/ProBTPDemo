@@ -27,7 +27,7 @@
     "_skin_": "s216801916534979a34790f5dfd3d04a",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "20dp"
     },
     "_width_": {
         "type": "string",
@@ -36,31 +36,25 @@
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {
-        "caption": "Unité d'audit",
+        "caption": "Critères libres",
         "data": {
             "desktop": [
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "TEST UNIT DEV 1"
+                        "text": "Pippo"
                     }
                 },
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "TEST UNIT DEV 2"
+                        "text": "Pluto"
                     }
                 },
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "TEST UNIT DEV 3"
-                    }
-                },
-                {
-                    "lblSelectionItem": {
-                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "TEST UNIT DEV 4"
+                        "text": "Paperino"
                     }
                 }
             ],
@@ -89,16 +83,16 @@
                 {}
             ]
         },
-        "selection": "TEST UNIT DEV 1"
+        "selection": "Pippo"
     },
-    "id": "selectUniAudit",
+    "id": "selectCriteria",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "e8ae1ff5b7c744b8a618d92b454d1671",
+    "kuid": "j727b15677554d42a5a2f99221c06377",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "flxRow1",
+    "parent": "flxSuivi",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

@@ -4,7 +4,7 @@
     "_children_": [],
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "60dp"
     },
     "_left_": {
         "type": "string",
@@ -31,26 +31,26 @@
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "300dp"
     },
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {
-        "title": "En attente des pilotes/coordinateurs pour proposer une solution..."
+        "caption": "Identifiant de mission"
     },
-    "id": "cmpWaitingPage",
+    "id": "fieldMissionId",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
-    "kuid": "h3dc872025bc4316b2fa7a6562868255",
+    "isvisible": true,
+    "kuid": "j77d0b8a3d574b11965bb3a037110f69",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "StepContainer3",
+    "parent": "flxRow1",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "sourceUserWidget": "h7043ba536e54c45972747c92a12cde8",
+    "sourceUserWidget": "d353d332f6554c0bb17590419363c70d",
     "wType": "UserWidgetInstance",
     "zindex": 1
 }

@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "20dp"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -36,31 +36,31 @@
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {
-        "caption": "Unité d'audit",
+        "caption": "Priorité",
         "data": {
             "desktop": [
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "TEST UNIT DEV 1"
+                        "text": "Priority1"
                     }
                 },
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "TEST UNIT DEV 2"
+                        "text": "Priority2"
                     }
                 },
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "TEST UNIT DEV 3"
+                        "text": "Priority3"
                     }
                 },
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "TEST UNIT DEV 4"
+                        "text": "Priority4"
                     }
                 }
             ],
@@ -89,16 +89,16 @@
                 {}
             ]
         },
-        "selection": "TEST UNIT DEV 1"
+        "selection": "Priority1"
     },
-    "id": "selectUniAudit",
+    "id": "selectPriority",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "e8ae1ff5b7c744b8a618d92b454d1671",
+    "kuid": "aa722a13b5bf4f228345a9d34e4f5909",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "flxRow1",
+    "parent": "flxRow3",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

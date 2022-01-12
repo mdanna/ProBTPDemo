@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "20dp"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -36,31 +36,25 @@
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {
-        "caption": "Unité d'audit",
+        "caption": "Unité destinataire",
         "data": {
             "desktop": [
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "TEST UNIT DEV 1"
+                        "text": "PRO BTP"
                     }
                 },
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "TEST UNIT DEV 2"
+                        "text": "PIPPO"
                     }
                 },
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "TEST UNIT DEV 3"
-                    }
-                },
-                {
-                    "lblSelectionItem": {
-                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "TEST UNIT DEV 4"
+                        "text": "GUGA"
                     }
                 }
             ],
@@ -89,16 +83,16 @@
                 {}
             ]
         },
-        "selection": "TEST UNIT DEV 1"
+        "selection": "PRO BTP"
     },
-    "id": "selectUniAudit",
+    "id": "selectEntDest",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "e8ae1ff5b7c744b8a618d92b454d1671",
+    "kuid": "ada57319e7ec4653a8b8b42e77e215c7",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "flxRow1",
+    "parent": "flxRow2",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

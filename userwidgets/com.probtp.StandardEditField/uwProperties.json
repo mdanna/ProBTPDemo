@@ -12,7 +12,9 @@
         "groups": {
             "apis": [],
             "events": [],
-            "properties": [],
+            "properties": [
+                "General"
+            ],
             "widgets": []
         },
         "properties": {
@@ -21,30 +23,9 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "jf69009506174e6f92ef4464a5b2e85b",
-                    "originalPropertyKey": "text",
-                    "propertyIndex": 1,
-                    "propertyKey": "text",
-                    "pw": {
-                        "access": "readwrite",
-                        "category": "look",
-                        "dependencyConditions": {},
-                        "dependentKeysKUIDs": null,
-                        "displayName": "text",
-                        "isHiddenInTool": false,
-                        "srcWidget": "txtField",
-                        "type": "string",
-                        "uiRepresentation": "Label-Textbox",
-                        "wType": "TextField"
-                    },
-                    "srcWgtKUID": "ja8ace3b430e4e0f9f16e91cbd022746"
-                },
-                {
-                    "access": "Enable",
-                    "group": "General",
                     "kuid": "h18ae7dbb6844c00b9ab5f51856fd24d",
                     "originalPropertyKey": "text",
-                    "propertyIndex": 2,
+                    "propertyIndex": 1,
                     "propertyKey": "caption",
                     "pw": {
                         "access": "readwrite",
@@ -59,6 +40,27 @@
                         "wType": "Label"
                     },
                     "srcWgtKUID": "j75afc09ba314514bef5b995eb4f19af"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "jf69009506174e6f92ef4464a5b2e85b",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "text",
+                        "isHiddenInTool": false,
+                        "srcWidget": "txtField",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "ja8ace3b430e4e0f9f16e91cbd022746"
                 }
             ]
         },

@@ -3,12 +3,12 @@
     "DNDConfig": null,
     "_children_": [],
     "_height_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "20dp"
     },
     "_margin_": [
         0,
@@ -27,30 +27,30 @@
     "_skin_": "s216801916534979a34790f5dfd3d04a",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "20dp"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "300dp"
     },
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {
-        "title": "En attente des pilotes/coordinateurs pour proposer une solution..."
+        "caption": "Responsable de mission"
     },
-    "id": "cmpWaitingPage",
+    "id": "fieldMissionResp",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
-    "kuid": "h3dc872025bc4316b2fa7a6562868255",
+    "isvisible": true,
+    "kuid": "e9a16ef07fe946c8934306577bc138e5",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "StepContainer3",
+    "parent": "flxContent",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "sourceUserWidget": "h7043ba536e54c45972747c92a12cde8",
+    "sourceUserWidget": "d353d332f6554c0bb17590419363c70d",
     "wType": "UserWidgetInstance",
     "zindex": 1
 }

@@ -1,14 +1,12 @@
 {
-    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
     "DNDConfig": null,
-    "_children_": [],
     "_height_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "20dp"
     },
     "_margin_": [
         0,
@@ -16,7 +14,7 @@
         0,
         0
     ],
-    "_orientation_": 1,
+    "_orientation_": 6,
     "_padding_": [
         0,
         0,
@@ -27,30 +25,37 @@
     "_skin_": "s216801916534979a34790f5dfd3d04a",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "30dp"
     },
     "_width_": {
         "type": "string",
         "value": "100%"
     },
+    "allboxes": [],
+    "autogrowmode": 1,
     "canUpdateUI": true,
-    "containerweight": 0,
-    "data": {
-        "title": "En attente des pilotes/coordinateurs pour proposer une solution..."
-    },
-    "id": "cmpWaitingPage",
+    "children": [
+        "btnContinue1",
+        "btnPass1"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxButtons1",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
-    "kuid": "h3dc872025bc4316b2fa7a6562868255",
-    "masterType": 1,
-    "name": "kony.ui.UserWidgetInstance",
-    "parent": "StepContainer3",
+    "isvisible": true,
+    "kuid": "e7daadea7f6b4b74bda12703629cd95d",
+    "layouttype": 3,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxContent",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "sourceUserWidget": "h7043ba536e54c45972747c92a12cde8",
-    "wType": "UserWidgetInstance",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
     "zindex": 1
 }

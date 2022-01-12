@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "20dp"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -36,31 +36,25 @@
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {
-        "caption": "Unité d'audit",
+        "caption": "Domaine",
         "data": {
             "desktop": [
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "TEST UNIT DEV 1"
+                        "text": "Domaine1"
                     }
                 },
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "TEST UNIT DEV 2"
+                        "text": "Domaine2"
                     }
                 },
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "TEST UNIT DEV 3"
-                    }
-                },
-                {
-                    "lblSelectionItem": {
-                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "TEST UNIT DEV 4"
+                        "text": "Domaine3"
                     }
                 }
             ],
@@ -89,16 +83,16 @@
                 {}
             ]
         },
-        "selection": "TEST UNIT DEV 1"
+        "selection": "Domaine1"
     },
-    "id": "selectUniAudit",
+    "id": "selectDom",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "e8ae1ff5b7c744b8a618d92b454d1671",
+    "kuid": "ec356f9df6074ad192836eaa2d587209",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "flxRow1",
+    "parent": "flxRow4",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

@@ -33,7 +33,7 @@
     "canUpdateUI": true,
     "canvasWidth": 1200,
     "children": [
-        "StandardSelect"
+        "StandardSectionHeader"
     ],
     "containerweight": 100,
     "currentLocale": "default",
@@ -49,7 +49,7 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "ue2f2c6c971f4dccadbcaab9867b7dc0",
+    "kuid": "u4fe3db5a1c0426cb49f5cf671087e21",
     "layouttype": 2,
     "masterType": 1,
     "name": "kony.ui.Form2",
@@ -59,8 +59,8 @@
     },
     "paddinginpixel": false,
     "platform": "desktopweb",
-    "prevDevice": "desktopweb",
-    "prevPlatform": "desktopweb",
+    "prevDevice": "iPhone11",
+    "prevPlatform": "iphone",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainscrollposition": false,

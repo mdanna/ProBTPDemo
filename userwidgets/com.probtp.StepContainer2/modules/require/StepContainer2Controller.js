@@ -9,7 +9,43 @@ define(function() {
       });
       
       this.view.preShow = () => {
-        this.view.btnNext.onClick = () => globals.nextStep(globals.ROLES[2]);
+        if(!this.initDone){
+          
+          this.view.btnContinue1.onClick = () => {
+            this.view.sectionAffectation.enabled = true;
+            this.view.sectionAffectation.expand(true);
+            this.view.flxButtons1.isVisible = false;
+          };
+          
+          this.view.sectionAffectation.onExpand = (value) => this.view.flxAffectation.isVisible = !!value;
+          
+          this.view.btnContinue2.onClick = () => {
+            this.view.sectionDescription.enabled = true;
+            this.view.sectionAffectation.expand(false);
+            this.view.sectionDescription.expand(true);
+            this.view.flxButtons2.isVisible = false;
+          };
+          
+          this.view.sectionDescription.onExpand = (value) => this.view.flxDescription.isVisible = !!value;
+
+          this.view.btnContinue3.onClick = () => {
+            this.view.sectionSuivi.enabled = true;
+            this.view.sectionAffectation.expand(false);
+            this.view.sectionDescription.expand(false);
+            this.view.sectionSuivi.expand(true);
+            this.view.flxButtons3.isVisible = false;
+          };
+          
+          this.view.sectionSuivi.onExpand = (value) => this.view.flxSuivi.isVisible = !!value;
+          
+          this.view.btnNext.onClick = () => {
+            //todo save the data here
+            globals.nextStep(globals.ROLES[2]);
+          };
+          
+          
+          this.initDone = true;
+        }
       };
       
       this.view.postShow = () => {

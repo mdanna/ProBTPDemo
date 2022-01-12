@@ -3,8 +3,8 @@
     "DNDConfig": null,
     "_children_": [],
     "_height_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
@@ -31,26 +31,27 @@
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "300dp"
     },
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {
-        "title": "En attente des pilotes/coordinateurs pour proposer une solution..."
+        "caption": "Fin de réalisation à suivre",
+        "selection": "right"
     },
-    "id": "cmpWaitingPage",
+    "id": "checkboxFin",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
-    "kuid": "h3dc872025bc4316b2fa7a6562868255",
+    "isvisible": true,
+    "kuid": "a33b5e8d4eed416cb4a9dbe0645b6e9a",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "StepContainer3",
+    "parent": "flxRow5",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "sourceUserWidget": "h7043ba536e54c45972747c92a12cde8",
+    "sourceUserWidget": "jc4373cb534641b08c620f67b9fd410a",
     "wType": "UserWidgetInstance",
     "zindex": 1
 }

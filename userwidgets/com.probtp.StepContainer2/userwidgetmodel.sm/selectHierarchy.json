@@ -27,7 +27,7 @@
     "_skin_": "s216801916534979a34790f5dfd3d04a",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "20dp"
     },
     "_width_": {
         "type": "string",
@@ -36,31 +36,25 @@
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {
-        "caption": "Unité d'audit",
+        "caption": "Hiérarchie",
         "data": {
             "desktop": [
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "TEST UNIT DEV 1"
+                        "text": "Test1"
                     }
                 },
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "TEST UNIT DEV 2"
+                        "text": "Test2"
                     }
                 },
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "TEST UNIT DEV 3"
-                    }
-                },
-                {
-                    "lblSelectionItem": {
-                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "TEST UNIT DEV 4"
+                        "text": "Test3"
                     }
                 }
             ],
@@ -89,16 +83,16 @@
                 {}
             ]
         },
-        "selection": "TEST UNIT DEV 1"
+        "selection": "Test2"
     },
-    "id": "selectUniAudit",
+    "id": "selectHierarchy",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "e8ae1ff5b7c744b8a618d92b454d1671",
+    "kuid": "b35447830eaa4634819dd6aca3801436",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "flxRow1",
+    "parent": "flxAffectation",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

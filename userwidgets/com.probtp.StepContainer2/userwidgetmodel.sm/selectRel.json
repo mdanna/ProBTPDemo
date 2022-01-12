@@ -36,7 +36,7 @@
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {
-        "caption": "Unité d'audit",
+        "caption": "En relation avec",
         "data": {
             "desktop": [
                 {
@@ -91,14 +91,14 @@
         },
         "selection": "TEST UNIT DEV 1"
     },
-    "id": "selectUniAudit",
+    "id": "selectRel",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "e8ae1ff5b7c744b8a618d92b454d1671",
+    "kuid": "ef102fcc58ac45168722538ee0c628bd",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "flxRow1",
+    "parent": "flxRow2",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

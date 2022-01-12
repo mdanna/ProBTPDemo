@@ -1,7 +1,5 @@
 {
-    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
     "DNDConfig": null,
-    "_children_": [],
     "_height_": {
         "type": "string",
         "value": "30dp"
@@ -16,7 +14,7 @@
         0,
         0
     ],
-    "_orientation_": 1,
+    "_orientation_": 6,
     "_padding_": [
         0,
         0,
@@ -24,34 +22,39 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s7226f3e65874aeb96bf63fe8d8ec674",
+    "_skin_": "sd357cca16e343ce87992e54d24fbcc5",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "6dp"
     },
     "_width_": {
         "type": "string",
-        "value": "180dp"
+        "value": "300dp"
     },
+    "allboxes": [],
+    "autogrowmode": 0,
     "canUpdateUI": true,
-    "containerweight": 0,
-    "data": {
-        "caption": "Sauvegarder et continuer",
-        "image": "save.png"
-    },
-    "id": "btnNext",
+    "children": [
+        "flxLeft",
+        "flxRight"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxSelection",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "g204d6cfdcce4e2e98226304cb6db874",
-    "masterType": 1,
-    "name": "kony.ui.UserWidgetInstance",
-    "parent": "flxButtons4",
+    "kuid": "ba759ef863fd42a79391f04e3717efb2",
+    "layouttype": 3,
+    "name": "kony.ui.FlexContainer",
+    "parent": "StandardLinearCheckbox",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "sourceUserWidget": "i045debc725d4afc8d82d7d7cf466260",
-    "wType": "UserWidgetInstance",
-    "zindex": 1
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
 }

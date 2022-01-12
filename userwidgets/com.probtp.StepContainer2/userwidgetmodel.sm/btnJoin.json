@@ -4,11 +4,11 @@
     "_children_": [],
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "30dp"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "20dp"
     },
     "_margin_": [
         0,
@@ -24,33 +24,34 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s216801916534979a34790f5dfd3d04a",
+    "_skin_": "s7226f3e65874aeb96bf63fe8d8ec674",
     "_top_": {
         "type": "string",
         "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "165dp"
     },
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {
-        "title": "En attente des pilotes/coordinateurs pour proposer une solution..."
+        "caption": "Joindre une autre reco",
+        "image": "short_right_2.png"
     },
-    "id": "cmpWaitingPage",
+    "id": "btnJoin",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
-    "kuid": "h3dc872025bc4316b2fa7a6562868255",
+    "isvisible": true,
+    "kuid": "fc76883d0fd0445fa2ab031e5e9336ad",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "StepContainer3",
+    "parent": "flxButtons4",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "sourceUserWidget": "h7043ba536e54c45972747c92a12cde8",
+    "sourceUserWidget": "i045debc725d4afc8d82d7d7cf466260",
     "wType": "UserWidgetInstance",
     "zindex": 1
 }

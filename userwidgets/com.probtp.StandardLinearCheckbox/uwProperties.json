@@ -1,0 +1,114 @@
+{
+    "classname": "StandardLinearCheckbox",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "left",
+                    "group": "General",
+                    "kuid": "bc5835fb0bb2431e9ad5a9c69f93ffc3",
+                    "originalPropertyKey": "selection",
+                    "propertyIndex": 4,
+                    "propertyKey": "selection",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "selection",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "jc4373cb534641b08c620f67b9fd410a",
+                    "type": "list selector",
+                    "value": [
+                        "left",
+                        "right"
+                    ]
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "aeff67cb565a4073b8981439966637fd",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "caption",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "caption",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblCaption",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "e563c0a1e357435ca58c32af31d9cbaf"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "cfb1c326dd6a44d3a565e85c36d6b518",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "textLeft",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "textLeft",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblLeft",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ede6c1d1437c410d9796bd770886f634"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e19dac658a8b4273a421e25e58492415",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "textRight",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "tetRight",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblRight",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "d8efd2306a3045ffb4d17801d173ccfb"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.probtp",
+    "version": "1.0.0"
+}

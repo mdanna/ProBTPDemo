@@ -1,0 +1,119 @@
+{
+    "classname": "StandardSectionHeader",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "a2794548a0f948cdb4ccb167a9687c66",
+                    "paramList": [
+                        {
+                            "name": "bool"
+                        }
+                    ],
+                    "propertyKey": "expand",
+                    "pw": {
+                        "displayName": "expand",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c129cdaacc8f400c9a639723deddd871",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e5ae00a283454a349cc3dfe90065217b",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onExpand",
+                    "pw": {
+                        "displayName": "onExpand",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c129cdaacc8f400c9a639723deddd871",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": false,
+                    "group": "General",
+                    "kuid": "jc0084a8b99844bf8d6fba1167b106de",
+                    "originalPropertyKey": "expanded",
+                    "propertyIndex": 1,
+                    "propertyKey": "expanded",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "expanded",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "c129cdaacc8f400c9a639723deddd871",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": false,
+                    "group": "General",
+                    "kuid": "e359d8bdd83f44b7b1e0932fff3a70f9",
+                    "originalPropertyKey": "enabled",
+                    "propertyIndex": 3,
+                    "propertyKey": "enabled",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "enabled",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "c129cdaacc8f400c9a639723deddd871",
+                    "type": "boolean",
+                    "value": "true/false"
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "g5e8b3f890004973a27b7955375c7ec2",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "caption",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "caption",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblCaption",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "d6fda320267a4970a1eaede558e45634"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.probtp",
+    "version": "1.0.0"
+}

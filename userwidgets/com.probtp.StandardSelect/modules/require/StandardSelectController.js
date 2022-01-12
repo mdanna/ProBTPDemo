@@ -6,6 +6,11 @@ define(function() {
 
         if(!this.initDone){
           this.view.flxSelection.onClick = () => {
+            const selectionIndex = this.view.segSelectList.data.findIndex((row) => row.lblSelectionItem === this.view.lblSelection.text);
+            (selectionIndex !== -1) && this.view.segSelectList.setDataAt({
+              lblSelectionItem: this.view.lblSelection.text,
+              template: 'flxSelectionListSelected'
+            }, selectionIndex);
             this.view.flxSelectList.isVisible = !this.view.flxSelectList.isVisible;
           };
 
@@ -31,11 +36,6 @@ define(function() {
           this.initDone = true;
         }
 
-        const selectionIndex = this.view.segSelectList.data.findIndex((row) => row.lblSelectionItem === this.view.lblSelection.text);
-        (selectionIndex !== -1) && this.view.segSelectList.setDataAt({
-          lblSelectionItem: this.view.lblSelection.text,
-          template: 'flxSelectionListSelected'
-        }, selectionIndex);
 
       };
     },

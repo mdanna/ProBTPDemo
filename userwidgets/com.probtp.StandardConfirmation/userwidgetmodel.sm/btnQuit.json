@@ -1,0 +1,58 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s9043fdfd2e243a7bd7ff6ef4c50d765",
+    "_top_": {
+        "type": "string",
+        "value": "15dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "165dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 0,
+    "data": {
+        "caption": "Oui, je souhaite sortir",
+        "image": "check_2.png",
+        "skinCaption": "s867f9c76e894eeda2f4f187cb1b54f4"
+    },
+    "id": "btnQuit",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "d404450ca31a42679564c4ff38c31160",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxConfirm",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "i045debc725d4afc8d82d7d7cf466260",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

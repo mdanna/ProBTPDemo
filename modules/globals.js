@@ -13,6 +13,7 @@ const globals = {
     globals.currentStep = 1;
     globals.currentRole = globals.ROLES[0];
     eventManager.publish('eventFinish');
+    new kony.mvc.Navigation('frmHome'). navigate();
   },
   
   currentRole: 'Responsable de Mission',

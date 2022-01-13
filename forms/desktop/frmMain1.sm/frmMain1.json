@@ -53,7 +53,8 @@
         "shadowRight",
         "flxAppHeaderDivider",
         "flxMain",
-        "cmpRoleSelector"
+        "cmpRoleSelector",
+        "quitConfirm"
     ],
     "containerweight": 100,
     "controllerInfo": {

@@ -82,6 +82,25 @@
                         "wType": "Image"
                     },
                     "srcWgtKUID": "ifda506489784b28a237e38bdc0c0a56"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "acec9b6c21f646399a57261d98fb320e",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 3,
+                    "propertyKey": "skinCaption",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Normal",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblCaption",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "b173ba30e8da48f39fcf363d69703979"
                 }
             ]
         },

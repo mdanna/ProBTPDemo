@@ -29,12 +29,19 @@ define({
         }
       });
       
-      this.view.preShow = () => {
-        this.updateLayout();
+      this.view.leftMenu.onMenuSelect = (menuItem) => {
+        const flxMainWasVisible = this.view.flxMain.isVisible;
+        this.view.flxMain.isVisible = (menuItem === 'missions');
+        if(menuItem === 'missions' && flxMainWasVisible){
+          this.view.quitConfirm.isVisible = true;
+        }
       };
 
     };
 
+    this.view.preShow = () => {
+      this.updateLayout();
+    };
   },
 
   updateLayout() {
@@ -43,6 +50,4 @@ define({
     });
     this.view.steps.currentStep = globals.currentStep;
   }
-
-
 });

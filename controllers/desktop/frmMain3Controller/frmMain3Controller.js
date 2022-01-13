@@ -15,28 +15,36 @@ define({
       eventManager.subscribe('eventNext', () => {
         this.updateLayout();
       });
-      
+
       eventManager.subscribe('eventFinish', () => {
         this.view.flxStep.widgets().forEach((stepContainer, index) => {
           stepContainer.isVisible = index === 0;
         });
         this.view.steps.currentStep = 1;
       });
-      
+
       eventManager.subscribe('eventShowRoleSelector', (role) => {
         if(role === this.FORM_ROLE){
           this.view.cmpRoleSelector.isVisible = true;
         }
       });
-      
-      this.view.preShow = () => {
-        this.updateLayout();
+
+      this.view.leftMenu.onMenuSelect = (menuItem) => {
+        const flxMainWasVisible = this.view.flxMain.isVisible;
+        this.view.flxMain.isVisible = (menuItem === 'missions');
+        if(menuItem === 'missions' && flxMainWasVisible){
+          this.view.quitConfirm.isVisible = true;
+        }
       };
 
     };
-    
+
+    this.view.preShow = () => {
+      this.updateLayout();
+    };
+
   },
-  
+
   updateLayout() {
     this.view.flxStep.widgets().forEach((stepContainer, index) => {
       stepContainer.isVisible = index + 1 === globals.currentStep;

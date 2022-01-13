@@ -18,9 +18,9 @@
     "_pxMenuIndex": [
         2,
         1,
-        1
+        0
     ],
-    "_skin_": "sa690fd57b254fc0a05a026d4d007590",
+    "_skin_": "s1e0f2901d3a4defa83003b2ce4db185",
     "_title_": null,
     "addWidgetsdone": false,
     "allboxes": [],
@@ -52,15 +52,13 @@
         "leftMenu",
         "shadowRight",
         "flxAppHeaderDivider",
-        "flxMain",
-        "cmpRoleSelector",
-        "quitConfirm"
+        "flxMain"
     ],
     "containerweight": 100,
     "controllerInfo": {
         "default": {
             "channel": "desktop",
-            "name": "frmMain2Controller"
+            "name": "frmHomeController"
         }
     },
     "currentLocale": "default",
@@ -70,7 +68,7 @@
     "device": "desktopweb",
     "displayorientation": 1,
     "enabledforidletimeout": false,
-    "id": "frmMain2",
+    "id": "frmHome",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
@@ -93,7 +91,7 @@
     "kiosk": {
         "needAppMenu": false
     },
-    "kuid": "acc9d6cf5f044d49b870b6e9b3a08adc",
+    "kuid": "d84b3727a15a4cbcb09e33cd406a1541",
     "layouttype": 2,
     "name": "kony.ui.Form2",
     "needappmenu": false,

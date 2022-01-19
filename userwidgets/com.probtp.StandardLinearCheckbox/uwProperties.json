@@ -2,7 +2,20 @@
     "classname": "StandardLinearCheckbox",
     "definitions": {
         "apis": {
-            "custom": [],
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "haf3a55475124677a047ef763c24f2b2",
+                    "paramList": [],
+                    "propertyKey": "getValue",
+                    "pw": {
+                        "displayName": "getValue",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "jc4373cb534641b08c620f67b9fd410a",
+                    "type": "event"
+                }
+            ],
             "passthrough": []
         },
         "events": {
@@ -10,7 +23,9 @@
             "passthrough": []
         },
         "groups": {
-            "apis": [],
+            "apis": [
+                "General"
+            ],
             "events": [],
             "properties": [],
             "widgets": []

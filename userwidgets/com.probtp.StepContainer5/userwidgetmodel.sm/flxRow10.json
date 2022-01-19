@@ -1,14 +1,12 @@
 {
-    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
     "DNDConfig": null,
-    "_children_": [],
     "_height_": {
         "type": "ref",
         "value": "preferred"
     },
     "_left_": {
         "type": "string",
-        "value": "20dp"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -16,7 +14,7 @@
         0,
         0
     ],
-    "_orientation_": 1,
+    "_orientation_": 6,
     "_padding_": [
         0,
         0,
@@ -27,30 +25,36 @@
     "_skin_": "s216801916534979a34790f5dfd3d04a",
     "_top_": {
         "type": "string",
-        "value": "20dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "300dp"
+        "value": "100%"
     },
+    "allboxes": [],
+    "autogrowmode": 1,
     "canUpdateUI": true,
-    "containerweight": 0,
-    "data": {
-        "caption": "RECO associés"
-    },
-    "id": "filedAssoc",
+    "children": [
+        "flxData10",
+        "flxDivider10"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxRow10",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "a5506880ad7d46cabd7b6b9a5384a829",
-    "masterType": 1,
-    "name": "kony.ui.UserWidgetInstance",
-    "parent": "flxDescription",
+    "kuid": "ca898133565b46ad83213b1605722b6a",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxSolution",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "sourceUserWidget": "d353d332f6554c0bb17590419363c70d",
-    "wType": "UserWidgetInstance",
-    "zindex": 1
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
 }

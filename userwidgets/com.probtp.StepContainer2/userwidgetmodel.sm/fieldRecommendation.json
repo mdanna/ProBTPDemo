@@ -38,7 +38,7 @@
     "data": {
         "caption": "Recommendation"
     },
-    "id": "fielRecommendation",
+    "id": "fieldRecommendation",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,

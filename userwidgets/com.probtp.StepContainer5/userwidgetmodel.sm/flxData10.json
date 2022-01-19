@@ -1,8 +1,8 @@
 {
     "DNDConfig": null,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "60dp"
     },
     "_left_": {
         "type": "string",
@@ -22,39 +22,33 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s216801916534979a34790f5dfd3d04a",
+    "_skin_": "s2b9a63827024930a6f312b999c2c6a3",
     "_top_": {
         "type": "string",
-        "value": "10dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
         "value": "100%"
     },
     "allboxes": [],
-    "autogrowmode": 1,
+    "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "fieldRecommendation",
-        "flxRow3",
-        "selectAme",
-        "flxRow4",
-        "dateRecomm",
-        "fieldAssoc",
-        "fieldComment2",
-        "flxButtons3"
+        "lblDefinitionLabel",
+        "lblDefinition"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxDescription",
+    "id": "flxData10",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "i9442852cc5947adb57bd2d7b839bd00",
-    "layouttype": 4,
+    "kuid": "ab957da08f2e456fbbc54d70bfb5e2c5",
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxContent",
+    "parent": "flxRow10",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

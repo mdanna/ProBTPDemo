@@ -42,19 +42,19 @@
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "Pippo"
+                        "text": "Critère1"
                     }
                 },
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "Pluto"
+                        "text": "Critère2"
                     }
                 },
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "Paperino"
+                        "text": "Critère3"
                     }
                 }
             ],
@@ -83,7 +83,7 @@
                 {}
             ]
         },
-        "selection": "Pippo"
+        "selection": "Critère1"
     },
     "id": "selectCriteria",
     "info": null,

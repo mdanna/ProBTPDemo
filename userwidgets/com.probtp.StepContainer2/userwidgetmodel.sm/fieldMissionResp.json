@@ -36,7 +36,8 @@
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {
-        "caption": "Responsable de mission"
+        "caption": "Responsable de mission (*)",
+        "text": "Ambroise Thomas"
     },
     "id": "fieldMissionResp",
     "info": null,

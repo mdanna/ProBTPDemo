@@ -36,21 +36,22 @@
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {
-        "caption": "Risques"
+        "caption": "Evolution informatique nécessaire",
+        "selection": "right"
     },
-    "id": "dateRisk",
+    "id": "checkboxEvolution",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "c26904f99cd44336b396ea4a1651a786",
+    "kuid": "ac5356a8e2544408b9650e1a293107e4",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "flxRow5",
+    "parent": "flxRow1",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "sourceUserWidget": "c9b889ff23f642e68ddcad580bd498b1",
+    "sourceUserWidget": "jc4373cb534641b08c620f67b9fd410a",
     "wType": "UserWidgetInstance",
     "zindex": 1
 }

@@ -36,22 +36,21 @@
     "canUpdateUI": true,
     "containerweight": 0,
     "data": {
-        "caption": "Evolution informatique nécessaire",
-        "selection": "right"
+        "caption": "Date de fin de réalisation"
     },
-    "id": "checkboxEvlution",
+    "id": "dateFin",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "ac5356a8e2544408b9650e1a293107e4",
+    "kuid": "c26904f99cd44336b396ea4a1651a786",
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "flxRow1",
+    "parent": "flxRow5",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "sourceUserWidget": "jc4373cb534641b08c620f67b9fd410a",
+    "sourceUserWidget": "c9b889ff23f642e68ddcad580bd498b1",
     "wType": "UserWidgetInstance",
     "zindex": 1
 }

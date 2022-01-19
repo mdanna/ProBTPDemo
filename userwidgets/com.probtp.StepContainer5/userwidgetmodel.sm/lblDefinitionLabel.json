@@ -22,7 +22,7 @@
         0
     ],
     "_skin_": "s9b4981866d5453b930ad347eafb85c1",
-    "_text_": "Description de solution",
+    "_text_": "Définition de solution",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -41,7 +41,7 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblDescriptionLabel",
+    "id": "lblDefinitionLabel",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,9 +55,9 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "fb562f05885b45ccb1f0bd7861a2021e",
+    "kuid": "ebafa31123aa4517b2b67642e3cca427",
     "name": "kony.ui.Label",
-    "parent": "flxData2",
+    "parent": "flxData10",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

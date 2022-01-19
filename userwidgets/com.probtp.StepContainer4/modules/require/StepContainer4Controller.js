@@ -7,11 +7,27 @@ define(function() {
       eventManager.subscribe('eventNext', () => {
         this.updateLayout();
       });
-      
+
       this.view.preShow = () => {
-        this.view.btnNext.onClick = () => globals.nextStep(globals.ROLES[0]);
+        this.view.btnNext.onClick = () => {
+          globals.definition = this.view.fieldSolution.text || '';
+          if(globals.definition){
+            const dataObject = globals.getDataObject();
+            dataObject.addField("primaryKeyField", "MissionId");
+            dataObject.addField("MissionId", globals.missionId);
+            dataObject.addField('WorkflowField', "4");
+            dataObject.addField("SolutionDefinition", globals.definition);
+            globals.getObjectService().update({dataObject}, () => {
+              globals.nextStep(globals.ROLES[0]);
+            }, (error) => {
+              alert(`Error: ${JSON.stringify(error)}`);
+            });
+          } else {
+            alert("Le champ 'Définition de solution' est obligatoire");
+          }
+        };
       };
-      
+
       this.view.postShow = () => {
         this.updateLayout();
       };

@@ -35,6 +35,10 @@ define(function() {
         this.view.flxRight.skin = this.selection === 'right' ? SKIN_SELECTED : SKIN_UNSELECTED;
         this.view.lblLeft.skin = this.selection === 'left' ? SKIN_LBL_SELECTED : SKIN_LBL_UNSELECTED;
         this.view.lblRight.skin = this.selection === 'right' ? SKIN_LBL_SELECTED : SKIN_LBL_UNSELECTED;
+    },
+    
+    getValue(){
+      return this.selection === 'left' ? 'Oui' : 'Non';
     }
   };
 });

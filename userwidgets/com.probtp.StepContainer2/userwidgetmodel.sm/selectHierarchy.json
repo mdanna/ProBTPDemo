@@ -42,19 +42,19 @@
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "Test1"
+                        "text": "Hierachy1"
                     }
                 },
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "Test2"
+                        "text": "Hierachy2"
                     }
                 },
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "Test3"
+                        "text": "Hierachy3"
                     }
                 }
             ],
@@ -83,7 +83,7 @@
                 {}
             ]
         },
-        "selection": "Test2"
+        "selection": "Hierachy1"
     },
     "id": "selectHierarchy",
     "info": null,

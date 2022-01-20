@@ -85,7 +85,7 @@
         },
         "selection": "Development"
     },
-    "id": "fieldLevel",
+    "id": "selectLevel",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,

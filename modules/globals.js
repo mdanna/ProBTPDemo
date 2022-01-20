@@ -21,6 +21,24 @@ const globals = {
   },
 
   currentRole: 'Responsable de Mission',
+  
+  wfData: {
+    missionId: null,
+    real: null,
+    description: null,
+    justif: null,
+    evoution: null,
+    dateCible: null,
+    reports: null,
+    dateInitial: null,
+    crit: null,
+    compl: null,
+    definition: null,
+    level: null,
+    evolutionReal: null,
+    ref: null,
+    comments: null
+  },
 
   isCurrentFormForCurrentRole(){
     const currentFormId = kony.application.getCurrentForm().id;

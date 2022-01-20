@@ -8,13 +8,14 @@ define(function() {
     constructor: function(baseConfig, layoutConfig, pspConfig) {
       this.view.preShow = () => {
         this.updateLayout();
+        this.hasRendered = true;
       };
-      
+
       this.view.flxLeft.onClick = () => {
         this.selection = 'left';
         this.updateLayout();
       };
-      
+
       this.view.flxRight.onClick = () => {
         this.selection = 'right';
         this.updateLayout();
@@ -27,16 +28,19 @@ define(function() {
       });
       defineSetter(this, 'selection', value => {
         this._selection = value;
+        if(this.hasRendered){
+          this.updateLayout();
+        }
       });
     },
-    
+
     updateLayout(){
-        this.view.flxLeft.skin = this.selection === 'left' ? SKIN_SELECTED : SKIN_UNSELECTED;
-        this.view.flxRight.skin = this.selection === 'right' ? SKIN_SELECTED : SKIN_UNSELECTED;
-        this.view.lblLeft.skin = this.selection === 'left' ? SKIN_LBL_SELECTED : SKIN_LBL_UNSELECTED;
-        this.view.lblRight.skin = this.selection === 'right' ? SKIN_LBL_SELECTED : SKIN_LBL_UNSELECTED;
+      this.view.flxLeft.skin = this.selection === 'left' ? SKIN_SELECTED : SKIN_UNSELECTED;
+      this.view.flxRight.skin = this.selection === 'right' ? SKIN_SELECTED : SKIN_UNSELECTED;
+      this.view.lblLeft.skin = this.selection === 'left' ? SKIN_LBL_SELECTED : SKIN_LBL_UNSELECTED;
+      this.view.lblRight.skin = this.selection === 'right' ? SKIN_LBL_SELECTED : SKIN_LBL_UNSELECTED;
     },
-    
+
     getValue(){
       return this.selection === 'left' ? 'Oui' : 'Non';
     }

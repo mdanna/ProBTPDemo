@@ -38,7 +38,7 @@
     "canUpdateUI": true,
     "children": [
         "lblTitle",
-        "fieldLevel",
+        "selectLevel",
         "flxRow",
         "fieldComment",
         "btnNext"

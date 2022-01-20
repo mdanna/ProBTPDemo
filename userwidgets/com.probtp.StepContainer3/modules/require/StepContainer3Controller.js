@@ -13,28 +13,28 @@ define(function() {
           this.view.btnNext.onClick = () => {
             const dataObject = globals.getDataObject();
             dataObject.addField("primaryKeyField", "MissionId");
-            dataObject.addField("MissionId", globals.missionId);
+            dataObject.addField("MissionId", globals.wfData.missionId);
             dataObject.addField('WorkflowField', "3");
             
-            globals.real = this.view.checkboxReal.getValue();
-            globals.description = this.view.fieldDescription.text || '';
-            globals.justif = this.view.selectJustif.selection;
-            globals.evolution = this.view.checkboxEvolution.getValue();
-            globals.dateCible = this.view.dateCible.getDate();
-            globals.reports = this.view.fieldReports.text || '';
-            globals.dateInitial = this.view.dateInitial.getDate();
-            globals.crit = this.view.fieldCrit.text || '';
-            globals.compl = this.view.fieldCompl.text || '';
+            globals.wfData.real = this.view.checkboxReal.getValue();
+            globals.wfData.description = this.view.fieldDescription.text || '';
+            globals.wfData.justif = this.view.selectJustif.selection;
+            globals.wfData.evolution = this.view.checkboxEvolution.getValue();
+            globals.wfData.dateCible = this.view.dateCible.getDate();
+            globals.wfData.reports = this.view.fieldReports.text || '';
+            globals.wfData.dateInitial = this.view.dateInitial.getDate();
+            globals.wfData.crit = this.view.fieldCrit.text || '';
+            globals.wfData.compl = this.view.fieldCompl.text || '';
             
-            dataObject.addField("SolutionReaAEtape", globals.real);
-            dataObject.addField("SolutionDescription", globals.description);
-            dataObject.addField("SolutionTypeJusti", globals.justif);
-            dataObject.addField("SolutionEvolutionInfo", globals.evolution);
-            dataObject.addField("SolutionDateCible", globals.dateCible);
-            dataObject.addField("SolutionNbReports", globals.reports);
-            dataObject.addField("SolutionDateCibleInitial", globals.dateInitial);
-            dataObject.addField("SolutionCritereLibre", globals.crit);
-            dataObject.addField("SolutionComplement", globals.compl);
+            dataObject.addField("SolutionReaAEtape", globals.wfData.real);
+            dataObject.addField("SolutionDescription", globals.wfData.description);
+            dataObject.addField("SolutionTypeJusti", globals.wfData.justif);
+            dataObject.addField("SolutionEvolutionInfo", globals.wfData.evolution);
+            dataObject.addField("SolutionDateCible", globals.wfData.dateCible);
+            dataObject.addField("SolutionNbReports", globals.wfData.reports);
+            dataObject.addField("SolutionDateCibleInitial", globals.wfData.dateInitial);
+            dataObject.addField("SolutionCritereLibre", globals.wfData.crit);
+            dataObject.addField("SolutionComplement", globals.wfData.compl);
 
             globals.getObjectService().update({dataObject}, () => {
               globals.nextStep(globals.ROLES[1]);
@@ -52,8 +52,20 @@ define(function() {
     },
 
     updateLayout() {
-      this.view.flxContent.isVisible = globals.isCurrentFormForCurrentRole();
-      this.view.cmpWaitingPage.isVisible = !globals.isCurrentFormForCurrentRole();
+      const isCurrentFormForCurrentRole = globals.isCurrentFormForCurrentRole();
+      this.view.flxContent.isVisible = isCurrentFormForCurrentRole;
+      this.view.cmpWaitingPage.isVisible = !isCurrentFormForCurrentRole;
+      if(isCurrentFormForCurrentRole && globals.currentStep === 3){
+        this.view.checkboxReal.selection = "right";
+        this.view.fieldDescription.text = '';
+        this.view.selectJustif.selection = 'Justificatif1';
+        this.view.checkboxEvolution.selection = "right";
+        this.view.dateCible.reset();
+        this.view.fieldReports.text = '';
+        this.view.dateInitial.reset();
+        this.view.fieldCrit.text = '';
+        this.view.fieldCompl.text = '';
+      }
     },
 
     initGettersSetters() {}

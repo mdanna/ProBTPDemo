@@ -48,13 +48,13 @@
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "PIPPO"
+                        "text": "OTHER1"
                     }
                 },
                 {
                     "lblSelectionItem": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": "GUGA"
+                        "text": "OTHER2"
                     }
                 }
             ],

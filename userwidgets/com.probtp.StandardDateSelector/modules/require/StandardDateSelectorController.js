@@ -12,12 +12,16 @@ define(function() {
     initGettersSetters() {},
 
     getDate(){
-      let ret = null;
+      let ret = '';
       const dateComp = this.view.calSelection.dateComponents;
       if(dateComp){
         ret = `${dateComp[0]}/${dateComp[1]}/${dateComp[2]}`;
       }
       return ret;
+    },
+    
+    reset(){
+      this.view.calSelection.dateComponents = null;
     }
   };
 });

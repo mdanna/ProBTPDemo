@@ -9,19 +9,16 @@ define(function() {
       });
 
       this.view.preShow = () => {
-        this.view.fieldMissionId.text = '';
-        this.view.fieldMissionTitle.text = '';
-        
         if(!this.initDone){
           this.view.btnCreate.onClick = () => {
-            const missionId = this.view.fieldMissionId.text;
-            const missionTitle = this.view.fieldMissionTitle.text;
-            if(missionId && missionTitle){
+            globals.wfData.missionId = this.view.fieldMissionId.text;
+            globals.wfData.missionTitle = this.view.fieldMissionTitle.text;
+            if(globals.wfData.missionId  && globals.wfData.missionTitle){
 
               const dataObject = globals.getDataObject();
-              dataObject.addField('MissionId', missionId);
+              dataObject.addField('MissionId', globals.wfData.missionId);
               dataObject.addField('WorkflowField', "1");
-              dataObject.addField('MissionTitre', missionTitle);
+              dataObject.addField('MissionTitre', globals.wfData.missionTitle);
               dataObject.addField('MissionEntiteAudit', this.view.selectEntAudit.selection || '');
               dataObject.addField('MissionAudit', this.view.selectAudit.selection || '');
               dataObject.addField('MissionType', this.view.selectMissionType.selection || '');
@@ -30,7 +27,6 @@ define(function() {
               dataObject.addField('MissionCommentaires', this.view.fieldMissionComment.text || '');
 
               globals.getObjectService().create({dataObject}, () => {
-                eventManager.publish('eventNewMission', {missionId, missionTitle});
                 globals.nextStep(globals.ROLES[0]);
               }, (error) => {
                 alert(`Error: ${JSON.stringify(error)}`);
@@ -50,8 +46,20 @@ define(function() {
     },
 
     updateLayout() {
-      this.view.flxContent.isVisible = globals.isCurrentFormForCurrentRole();
-      this.view.cmpWaitingPage.isVisible = !globals.isCurrentFormForCurrentRole();
+      const isCurrentFormForCurrentRole = globals.isCurrentFormForCurrentRole();
+      this.view.flxContent.isVisible = isCurrentFormForCurrentRole;
+      this.view.cmpWaitingPage.isVisible = !isCurrentFormForCurrentRole;
+      if(isCurrentFormForCurrentRole && globals.currentStep === 1){
+        this.view.fieldMissionId.text = '';
+        this.view.fieldMissionTitle.text = '';
+        this.view.selectEntAudit.selection = 'PRO BTP';
+        this.view.selectUniAudit.selection = 'TEST UNIT DEV 1';
+        this.view.selectAudit.selection = 'Interne';
+        this.view.selectMissionType.selection = 'Interne';
+        this.view.dateMission.reset();
+        this.view.dateDiffusion.reset();
+        this.view.fieldMissionComment.text = '';
+      }
     },
 
     initGettersSetters() {}

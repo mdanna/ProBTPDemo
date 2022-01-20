@@ -8,29 +8,7 @@ define(function() {
         this.updateLayout();
       });
 
-      eventManager.subscribe('eventNewMission', ({missionId, missionTitle}) => {
-        globals.missionId = missionId;
-        this.view.fieldMissionId.text = missionId;
-        this.view.fieldMissionTitle.text = missionTitle;
-        this.view.fieldMissionResp.text = 'Ambroise Thomas';
-      });
-
       this.view.preShow = () => {
-        this.view.fieldMissionId.setEnabled(false);
-        this.view.fieldMissionTitle.setEnabled(false);
-        this.view.fieldMissionResp.setEnabled(false);
-
-        this.view.flxButtons1.isVisible = true;
-        this.view.flxButtons2.isVisible = true;
-        this.view.flxButtons3.isVisible = true;
-
-        this.view.sectionAffectation.enabled = false;
-        this.view.sectionDescription.enabled = false;
-        this.view.sectionSuivi.enabled = false;
-
-        this.view.flxAffectation.isVisible = false;
-        this.view.flxDescription.isVisible = false;
-        this.view.flxSuivi.isVisible = false;
 
         if(!this.initDone){
 
@@ -68,7 +46,7 @@ define(function() {
           this.view.btnNext.onClick = () => {
             const dataObject = globals.getDataObject();
             dataObject.addField("primaryKeyField", "MissionId");
-            dataObject.addField("MissionId", globals.missionId);
+            dataObject.addField("MissionId", globals.wfData.missionId);
             dataObject.addField('WorkflowField', "2");
             
             //Mission
@@ -120,8 +98,53 @@ define(function() {
     },
 
     updateLayout() {
-      this.view.flxContent.isVisible = globals.isCurrentFormForCurrentRole();
-      this.view.cmpWaitingPage.isVisible = !globals.isCurrentFormForCurrentRole();
+      const isCurrentFormForCurrentRole = globals.isCurrentFormForCurrentRole();
+      this.view.flxContent.isVisible = isCurrentFormForCurrentRole;
+      this.view.cmpWaitingPage.isVisible = !isCurrentFormForCurrentRole;
+      
+      if(isCurrentFormForCurrentRole && globals.currentStep === 2){
+        this.view.fieldMissionId.text = globals.wfData.missionId;
+        this.view.fieldMissionId.setEnabled(false);
+        this.view.fieldMissionTitle.text = globals.wfData.missionTitle;
+        this.view.fieldMissionTitle.setEnabled(false);
+        this.view.fieldLink.text = '';
+        this.view.fieldMissionResp.text = 'Ambroise Thomas';
+        this.view.fieldMissionResp.setEnabled(false);
+        this.view.flxButtons1.isVisible = true;
+
+        this.view.sectionAffectation.enabled = false;
+        this.view.flxAffectation.isVisible = false;
+        this.view.fieldRecoId.text = '';
+        this.view.fieldRecoInt.text = '';
+        this.view.selectEntDest.selection = 'PRO BTP';
+        this.view.selectRel.selection = 'TEST UNIT DEV 1';
+        this.view.fieldCoord.text = '';
+        this.view.selectHierarchy.selection = 'Hierachy1';
+        this.view.dateMission.reset();
+        this.view.fieldComment1.text = '';
+        this.view.flxButtons2.isVisible = true;
+
+        this.view.sectionDescription.enabled = false;
+        this.view.flxDescription.isVisible = false;
+        this.view.fieldRecommendation.text = '';
+        this.view.selectPriority.selection = 'Priority1';
+        this.view.selectRisk.selection = 'Risque1';
+        this.view.selectAme.selection = 'Test1';
+        this.view.selectDom.selection = 'Domaine1';
+        this.view.selectSousdom.selection = 'Sous-domaine1';
+        this.view.dateRecomm.reset();
+        this.view.fieldAssoc.text = '';
+        this.view.fieldComment2.text = '';
+        this.view.flxButtons3.isVisible = true;
+
+        this.view.sectionSuivi.enabled = false;
+        this.view.flxSuivi.isVisible = false;
+        this.view.checkboxFin.selection = "right";
+        this.view.dateFin.reset();
+        this.view.selectConclusion.selection = 'Test1';
+        this.view.fieldComment3.text = '';
+        this.view.selectCriteria.selection = 'Critère1';
+      }
     },
 
     initGettersSetters() {}

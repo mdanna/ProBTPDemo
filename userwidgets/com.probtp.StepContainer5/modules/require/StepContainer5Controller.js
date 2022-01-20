@@ -10,22 +10,11 @@ define(function() {
 
       this.view.preShow = () => {
 
-        this.view.lblReal.text = globals.real;
-        this.view.lblDescription.text = globals.description;
-        this.view.lblJustif.text = globals.justif;
-        this.view.lblEvolution.text = globals.evolution;
-        this.view.lblCible.text = globals.dateCible;
-        this.view.lblReports.text = globals.reports;
-        this.view.lblInitial.text = globals.dateInitial;
-        this.view.lblCrit.text = globals.crit;
-        this.view.lblCompl.text = globals.compl;
-        this.view.lblDefinition.text = globals.definition;
-
         if(!this.initDone){
           this.view.btnNext.onClick = () => {
             const dataObject = globals.getDataObject();
             dataObject.addField("primaryKeyField", "MissionId");
-            dataObject.addField("MissionId", globals.missionId);
+            dataObject.addField("MissionId", globals.wfData.missionId);
             dataObject.addField('WorkflowField', "5");
             globals.getObjectService().update({dataObject}, () => {
               globals.nextStep(globals.ROLES[1]);
@@ -43,8 +32,22 @@ define(function() {
     },
 
     updateLayout() {
-      this.view.flxContent.isVisible = globals.isCurrentFormForCurrentRole();
-      this.view.cmpWaitingPage.isVisible = !globals.isCurrentFormForCurrentRole();
+      const isCurrentFormForCurrentRole = globals.isCurrentFormForCurrentRole();
+      this.view.flxContent.isVisible = isCurrentFormForCurrentRole;
+      this.view.cmpWaitingPage.isVisible = !isCurrentFormForCurrentRole;
+      if(isCurrentFormForCurrentRole && globals.currentStep === 5){
+        this.view.lblReal.text = globals.wfData.real;
+        this.view.lblDescription.text = globals.wfData.description;
+        this.view.lblJustif.text = globals.wfData.justif;
+        this.view.lblEvolution.text = globals.wfData.evolution;
+        this.view.lblCible.text = globals.wfData.dateCible;
+        this.view.lblReports.text = globals.wfData.reports;
+        this.view.lblInitial.text = globals.wfData.dateInitial;
+        this.view.lblCrit.text = globals.wfData.crit;
+        this.view.lblCompl.text = globals.wfData.compl;
+        this.view.lblDefinition.text = globals.wfData.definition;
+        this.view.flxContent.forceLayout();
+      }
     },
 
     initGettersSetters() {}

@@ -10,6 +10,15 @@ define(function() {
     },
 
     initGettersSetters() {},
+    
+    getDateAsString(){
+      let ret = '';
+      const dateComp = this.view.calSelection.dateComponents;
+      if(dateComp){
+        ret = `${utils.getTwoDigitNumber(dateComp[0])}/${utils.getTwoDigitNumber(dateComp[1])}/${dateComp[2]}`;
+      }
+      return ret;
+    },
 
     getDate(){
       let ret = null;

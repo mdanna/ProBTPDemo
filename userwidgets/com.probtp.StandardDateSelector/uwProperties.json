@@ -5,7 +5,7 @@
             "custom": [
                 {
                     "group": "General",
-                    "kuid": "db755d45defd47cc8444d783db65a8d5",
+                    "kuid": "a91269c4c7af4677a839ba45afa565bc",
                     "paramList": [],
                     "propertyKey": "getDate",
                     "pw": {
@@ -17,11 +17,23 @@
                 },
                 {
                     "group": "General",
-                    "kuid": "ia18ce347a3947c1981faa037078f995",
+                    "kuid": "cf9cfae14c9946129aeccffa13fe6343",
                     "paramList": [],
                     "propertyKey": "reset",
                     "pw": {
                         "displayName": "reset",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c9b889ff23f642e68ddcad580bd498b1",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f4f4c0549a854317a5ba55d3098c57de",
+                    "paramList": [],
+                    "propertyKey": "getDateAsString",
+                    "pw": {
+                        "displayName": "getDateAsString",
                         "uiRepresentation": "Label-Label-Button-Button"
                     },
                     "srcWgtKUID": "c9b889ff23f642e68ddcad580bd498b1",

@@ -11,6 +11,7 @@ define(function() {
       this.view.preShow = () => {
         if(!this.initDone){
           this.view.btnNext.onClick = () => {
+            kony.application.showLoadingScreen(null, "", constants.LOADING_SCREEN_POSITION_FULL_SCREEN, true, true, null);
             globals.wfData.definition = this.view.fieldSolution.text || '';
             if(globals.wfData.definition){
               const dataObject = globals.getDataObject();
@@ -19,12 +20,15 @@ define(function() {
               dataObject.addField('WorkflowField', "4");
               dataObject.addField("SolutionDefinition", globals.wfData.definition);
               globals.getObjectService().update({dataObject}, () => {
+                kony.application.dismissLoadingScreen();
                 globals.nextStep(globals.ROLES[0]);
               }, (error) => {
-                alert(`Error: ${JSON.stringify(error)}`);
+                kony.application.dismissLoadingScreen();
+                globals.errorAlert(`Error: ${error.errmsg}`);
               });
             } else {
-              alert("Le champ 'Définition de solution' est obligatoire");
+              kony.application.dismissLoadingScreen();
+              globals.informationAlert("Le champ 'Définition de solution' est obligatoire");
             }
           };
 

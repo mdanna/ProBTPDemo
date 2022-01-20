@@ -43,6 +43,10 @@ define(function() {
 
     getValue(){
       return this.selection === 'left' ? 'Oui' : 'Non';
+    },
+    
+    getBooleanValue(){
+      return this.selection === 'left' ? true : false;
     }
   };
 });

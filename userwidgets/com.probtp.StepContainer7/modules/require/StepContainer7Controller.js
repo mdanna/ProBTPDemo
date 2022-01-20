@@ -11,14 +11,17 @@ define(function() {
       this.view.preShow = () => {
         if(!this.initDone){
           this.view.btnNext.onClick =  () => {
+            kony.application.showLoadingScreen(null, "", constants.LOADING_SCREEN_POSITION_FULL_SCREEN, true, true, null);
             const dataObject = globals.getDataObject();
             dataObject.addField("primaryKeyField", "MissionId");
             dataObject.addField("MissionId", globals.wfData.missionId);
             dataObject.addField('WorkflowField', "7");
             globals.getObjectService().update({dataObject}, () => {
+              kony.application.dismissLoadingScreen();
               globals.finalStep();
             }, (error) => {
-              alert(`Error: ${JSON.stringify(error)}`);
+              kony.application.dismissLoadingScreen();
+              globals.errorAlert(`Error: ${error.errmsg}`);
             });
           };
           this.initDone = true;

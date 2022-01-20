@@ -11,6 +11,8 @@ define(function() {
       this.view.preShow = () => {
         if(!this.initDone){
           this.view.btnCreate.onClick = () => {
+            kony.application.showLoadingScreen(null, "", constants.LOADING_SCREEN_POSITION_FULL_SCREEN, true, true, null);
+            
             globals.wfData.missionId = this.view.fieldMissionId.text;
             globals.wfData.missionTitle = this.view.fieldMissionTitle.text;
             if(globals.wfData.missionId  && globals.wfData.missionTitle){
@@ -22,17 +24,20 @@ define(function() {
               dataObject.addField('MissionEntiteAudit', this.view.selectEntAudit.selection || '');
               dataObject.addField('MissionAudit', this.view.selectAudit.selection || '');
               dataObject.addField('MissionType', this.view.selectMissionType.selection || '');
-              dataObject.addField('MissionDate', this.view.dateMission.getDate() || '');
-              dataObject.addField('MissionDateDiffusion', this.view.dateDiffusion.getDate() || '');
+              this.view.dateMission.getDate() && dataObject.addField('MissionDate', this.view.dateMission.getDate());
+              this.view.dateDiffusion.getDate() && dataObject.addField('MissionDateDiffusion', this.view.dateDiffusion.getDate());
               dataObject.addField('MissionCommentaires', this.view.fieldMissionComment.text || '');
 
               globals.getObjectService().create({dataObject}, () => {
+                kony.application.dismissLoadingScreen();
                 globals.nextStep(globals.ROLES[0]);
               }, (error) => {
-                alert(`Error: ${JSON.stringify(error)}`);
+                kony.application.dismissLoadingScreen();
+                globals.errorAlert(`Error: ${error.errmsg}`);
               }); 
             } else {
-              alert("Les champs 'Identifiant de mission' et 'Titre de mission' sont obligatoires.");
+              kony.application.dismissLoadingScreen();
+              globals.informationAlert("Les champs 'Identifiant de mission' et 'Titre de mission' sont obligatoires.");
             }
           };
 

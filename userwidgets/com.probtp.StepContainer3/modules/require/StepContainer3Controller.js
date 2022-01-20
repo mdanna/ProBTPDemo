@@ -11,6 +11,7 @@ define(function() {
       this.view.preShow = () => {
         if(!this.initDone){
           this.view.btnNext.onClick = () => {
+            kony.application.showLoadingScreen(null, "", constants.LOADING_SCREEN_POSITION_FULL_SCREEN, true, true, null);
             const dataObject = globals.getDataObject();
             dataObject.addField("primaryKeyField", "MissionId");
             dataObject.addField("MissionId", globals.wfData.missionId);
@@ -20,26 +21,28 @@ define(function() {
             globals.wfData.description = this.view.fieldDescription.text || '';
             globals.wfData.justif = this.view.selectJustif.selection;
             globals.wfData.evolution = this.view.checkboxEvolution.getValue();
-            globals.wfData.dateCible = this.view.dateCible.getDate();
+            globals.wfData.dateCible = this.view.dateCible.getDate() || '';
             globals.wfData.reports = this.view.fieldReports.text || '';
-            globals.wfData.dateInitial = this.view.dateInitial.getDate();
+            globals.wfData.dateInitial = this.view.dateInitial.getDate() || '';
             globals.wfData.crit = this.view.fieldCrit.text || '';
             globals.wfData.compl = this.view.fieldCompl.text || '';
             
-            dataObject.addField("SolutionReaAEtape", globals.wfData.real);
+            dataObject.addField("SolutionReaAEtape", this.view.checkboxReal.getBooleanValue());
             dataObject.addField("SolutionDescription", globals.wfData.description);
             dataObject.addField("SolutionTypeJusti", globals.wfData.justif);
-            dataObject.addField("SolutionEvolutionInfo", globals.wfData.evolution);
-            dataObject.addField("SolutionDateCible", globals.wfData.dateCible);
+            dataObject.addField("SolutionEvolutionInfo", this.view.checkboxEvolution.getBooleanValue());
+            globals.wfData.dateCible && dataObject.addField("SolutionDateCible", globals.wfData.dateCible);
             dataObject.addField("SolutionNbReports", globals.wfData.reports);
-            dataObject.addField("SolutionDateCibleInitial", globals.wfData.dateInitial);
+            globals.wfData.dateInitial && dataObject.addField("SolutionDateCibleInitial", globals.wfData.dateInitial);
             dataObject.addField("SolutionCritereLibre", globals.wfData.crit);
             dataObject.addField("SolutionComplement", globals.wfData.compl);
 
             globals.getObjectService().update({dataObject}, () => {
+              kony.application.dismissLoadingScreen();
               globals.nextStep(globals.ROLES[1]);
             }, (error) => {
-              alert(`Error: ${JSON.stringify(error)}`);
+              kony.application.dismissLoadingScreen();
+              globals.errorAlert(`Error: ${error.errmsg}`);
             });
           };
           this.initDone = true;

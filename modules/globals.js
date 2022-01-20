@@ -21,7 +21,7 @@ const globals = {
   },
 
   currentRole: 'Responsable de Mission',
-  
+
   wfData: {
     missionId: null,
     real: null,
@@ -57,5 +57,23 @@ const globals = {
 
   getDataObject(){
     return new kony.sdk.dto.DataObject(this.OBJECT_NAME);
-  }
+  },
+
+  errorAlert(message){ 
+    kony.ui.Alert({
+      message,
+      alertType: constants.ALERT_TYPE_ERROR,
+    }, {
+      "contentAlignment": constants.ALERT_CONTENT_ALIGN_RIGHT
+    });
+  },
+
+  informationAlert: function(message){ 
+    kony.ui.Alert({
+      message,
+      alertType: constants.ALERT_TYPE_INFO,
+    }, {
+      "contentAlignment": constants.ALERT_CONTENT_ALIGN_LEFT
+    });
+  },
 };

@@ -27,7 +27,7 @@ define(function() {
               this.view.sectionDescription.expand(true);
               this.view.flxButtons2.isVisible = false;
             } else {
-              alert("Les champs 'Identifiant de RECO' et 'Intitulé de RECO' sont obligatoires.");
+              globals.informationAlert("Les champs 'Identifiant de RECO' et 'Intitulé de RECO' sont obligatoires.");
             }
           };
 
@@ -44,6 +44,7 @@ define(function() {
           this.view.sectionSuivi.onExpand = (value) => this.view.flxSuivi.isVisible = !!value;
 
           this.view.btnNext.onClick = () => {
+            kony.application.showLoadingScreen(null, "", constants.LOADING_SCREEN_POSITION_FULL_SCREEN, true, true, null);
             const dataObject = globals.getDataObject();
             dataObject.addField("primaryKeyField", "MissionId");
             dataObject.addField("MissionId", globals.wfData.missionId);
@@ -60,7 +61,7 @@ define(function() {
             dataObject.addField("Reco1EnRelationAvec", this.view.selectRel.selection);
             dataObject.addField("Reco1CoordinateurRisques", this.view.fieldCoord.text || '');
             dataObject.addField("Reco1Hierarchie", this.view.selectHierarchy.selection);
-            dataObject.addField("Reco1DateMission", this.view.dateMission.getDate());
+            this.view.dateMission.getDate() && dataObject.addField("Reco1DateMission", this.view.dateMission.getDate());
             dataObject.addField("Reco1CommantaireAffect", this.view.fieldComment1.text || '');
             
             //Description
@@ -70,21 +71,23 @@ define(function() {
             dataObject.addField("Reco1AxeAmelioration", this.view.selectAme.selection);
             dataObject.addField("Reco1Domaine", this.view.selectDom.selection);
             dataObject.addField("Reco1SousDomaine", this.view.selectSousdom.selection);
-            dataObject.addField("Reco1DateEcheance", this.view.dateRecomm.getDate());
+            this.view.dateRecomm.getDate() && dataObject.addField("Reco1DateEcheance", this.view.dateRecomm.getDate());
             dataObject.addField("Reco1Associe", this.view.fieldAssoc.text || '');
             dataObject.addField("Reco1CommentaireDesc", this.view.fieldComment2.text || '');
             
             //Suivi
-            dataObject.addField("Reco1FinRealisation", this.view.checkboxFin.getValue());
-            dataObject.addField("Reco1FinRealisationDate", this.view.dateFin.getDate());
+            dataObject.addField("Reco1FinRealisation", this.view.checkboxFin.getBooleanValue());
+            this.view.dateFin.getDate() && dataObject.addField("Reco1FinRealisationDate", this.view.dateFin.getDate());
             dataObject.addField("Reco1ConclusionSuivi", this.view.selectConclusion.selection);
             dataObject.addField("Reco1CommentaireSuivi", this.view.fieldComment3.text || '');
             dataObject.addField("Reco1CreitereLibre", this.view.selectCriteria.selection);
             
             globals.getObjectService().update({dataObject}, () => {
+              kony.application.dismissLoadingScreen();
               globals.nextStep(globals.ROLES[2]);
             }, (error) => {
-              alert(`Error: ${JSON.stringify(error)}`);
+              kony.application.dismissLoadingScreen();
+              globals.errorAlert(`Error: ${error.errmsg}`);
             });
           };
 

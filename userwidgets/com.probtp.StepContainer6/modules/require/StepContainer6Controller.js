@@ -11,6 +11,7 @@ define(function() {
       this.view.preShow = () => {
         if(!this.initDone){
           this.view.btnNext.onClick =  () => {
+            kony.application.showLoadingScreen(null, "", constants.LOADING_SCREEN_POSITION_FULL_SCREEN, true, true, null);
             globals.wfData.level = this.view.selectLevel.selection;
             globals.wfData.evolutionReal = this.view.checkboxEvolution.getValue();
             globals.wfData.ref = this.view.fieldRef.text || '';
@@ -22,13 +23,15 @@ define(function() {
             dataObject.addField('WorkflowField', "6");
             
             dataObject.addField("RealisationNiveau", globals.wfData.level);
-            dataObject.addField("RealisationEvolutionInfo", globals.wfData.evolutionReal);
+            dataObject.addField("RealisationEvolutionInfo", this.view.checkboxEvolution.getBooleanValue());
             dataObject.addField("RealisationEvolutionRef", globals.wfData.ref);
             dataObject.addField("RealisationCommentaires", globals.wfData.comments);
             globals.getObjectService().update({dataObject}, () => {
+              kony.application.dismissLoadingScreen();
               globals.nextStep(globals.ROLES[2]);
             }, (error) => {
-              alert(`Error: ${JSON.stringify(error)}`);
+              kony.application.dismissLoadingScreen();
+              globals.errorAlert(`Error: ${error.errmsg}`);
             });
           };
 

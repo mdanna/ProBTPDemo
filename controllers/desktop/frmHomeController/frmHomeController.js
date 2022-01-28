@@ -12,6 +12,7 @@ define({
         kony.print(menuItem);
       };
       
+      
       this.view.btnCreate.onClick = () => new kony.mvc.Navigation('frmMain1').navigate();
 
     };
